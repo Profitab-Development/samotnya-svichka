@@ -231,11 +231,12 @@
 // ЦЕ РОБОЧИЙ ХЕДЕР БУВ НА ЛІНКИ
 
 'use client'
-import React, { useEffect, useState } from 'react'
-import { usePathname, useRouter } from 'next/navigation'
+import React from 'react'
+// import { useEffect, useState } from 'react'
+// import { usePathname, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useStaticTranslations } from '@/hooks/useStaticTranslations'
+// import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import style from './WebHeader.module.css'
 import { HeaderForm } from '../HeaderForm/HeaderForm'
 import { backCall, logo_svichka } from '@/assets/Icons'
@@ -246,45 +247,45 @@ interface LinkItem {
 }
 
 const WebHeader: React.FC = () => {
-  const { t } = useStaticTranslations()
-  const pathname = usePathname()
-  const router = useRouter()
+  // const { t } = useStaticTranslations()
+  // const pathname = usePathname()
+  // const router = useRouter()
 
-  const [activeNavLink, setActiveNavLink] = useState<string>('')
+  // const [activeNavLink, setActiveNavLink] = useState<string>('')
 
-  useEffect(() => {
-    setActiveNavLink(pathname.substring(1))
-  }, [pathname])
+  // useEffect(() => {
+  //   setActiveNavLink(pathname.substring(1))
+  // }, [pathname])
 
-  useEffect(() => {
-    // Скрол до секції при переході з іншої сторінки через #hash
-    const hash = window.location.hash
-    if (hash) {
-      const id = hash.replace('#', '')
-      const element = document.getElementById(id)
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' })
-        }, 100) // невелика затримка, щоб DOM встиг завантажитись
-      }
-    }
-  }, [])
+  // useEffect(() => {
+  //   // Скрол до секції при переході з іншої сторінки через #hash
+  //   const hash = window.location.hash
+  //   if (hash) {
+  //     const id = hash.replace('#', '')
+  //     const element = document.getElementById(id)
+  //     if (element) {
+  //       setTimeout(() => {
+  //         element.scrollIntoView({ behavior: 'smooth' })
+  //       }, 100) // невелика затримка, щоб DOM встиг завантажитись
+  //     }
+  //   }
+  // }, [])
 
   const links: LinkItem[] = [
-    { to: '/about', label: t('header.link6') },
-    { to: 'services', label: t('header.link1') },
-    { to: '/blog', label: t('header.link5') },
-    { to: '/contacts', label: t('header.link4') },
+    { to: '#', label: 'Про фонд' },
+    { to: '#', label: 'Наша діяльність' },
+    { to: '#', label: 'Новини' },
+    { to: '#', label: 'Контакти' },
   ]
 
-  const isHome = pathname === '/'
+  // const isHome = pathname === '/'
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
+  // const scrollToSection = (id: string) => {
+  //   const element = document.getElementById(id)
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' })
+  //   }
+  // }
 
   return (
     <div className={style.wrap} id="header">
@@ -293,43 +294,19 @@ const WebHeader: React.FC = () => {
           <Image src={logo_svichka} alt="logo" className={style.header_logo} />
         </Link>
         <nav className={style.header_links}>
-          {links.map(({ to, label }) => {
-            const isPage = to.startsWith('/')
-
-            if (isPage) {
-              return (
-                <Link
-                  key={to}
-                  href={to}
-                  className={`${style.header_links__link} ${
-                    pathname === to ? style.header_links__link_active : ''
-                  }`}
-                >
-                  {label}
-                </Link>
-              )
-            }
-
-            return (
-              <a
-                key={to}
-                href={`/#${to}`}
-                className={`${style.header_links__link} ${
-                  activeNavLink === to ? style.header_links__link_active : ''
-                }`}
-                onClick={(e) => {
-                  e.preventDefault()
-                  if (isHome) {
-                    scrollToSection(to)
-                  } else {
-                    router.push(`/#${to}`)
-                  }
-                }}
-              >
-                {label}
-              </a>
-            )
-          })}
+          {links.map(({ to, label }) => (
+            <a
+              key={to}
+              href="#"
+              className={style.header_links__link}
+              onClick={(e) => {
+                e.preventDefault()
+                // Заглушка - можна додати alert або іншу логіку
+              }}
+            >
+              {label}
+            </a>
+          ))}
         </nav>
         <div className={style.header_right}>
           <div className={style.header_right__btns}>

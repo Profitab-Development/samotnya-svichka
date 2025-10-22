@@ -14,26 +14,26 @@ import style from './MobBurgerMenu.module.css'
 import 'react-international-phone/style.css'
 
 import {
-  facebookLink,
+  // facebookLink,
   // instagramLink,
-  mail as eMail,
-  mobTel,
+  // mail as eMail,
+  // mobTel,
   sendInTg,
-  telegramLink,
+  // telegramLink,
   THANK_ROUTE,
   // tiktokLink,
 } from '@/constants'
 import {
-  MobFbH,
-  MobFbS,
-  MobMailIcon,
+  // MobFbH,
+  // MobFbS,
+  // MobMailIcon,
   mobMenuCloseBtn,
   MobTelIcon,
-  MobTgH,
-  MobTgS,
+  // MobTgH,
+  // MobTgS,
   // tg_blue,
   logo_svichka,
-} from '@/assets/Icons'
+} from '@/assets/Icons/Header/header'
 import { Toastify } from '@/app/components/Toastify/Toastify'
 import { DotIcon } from '@/app/components/DotIcon/DotIcon'
 // import LanguagesChanger from '@/app/modules/header/LanguagesChanger/LanguagesChanger'
@@ -42,12 +42,12 @@ interface FormData {
   name: string
 }
 
-const socialsData = [
-  // { normal: MobInstS, hover: MobInstH, link: instagramLink },
-  { normal: MobFbS, hover: MobFbH, link: facebookLink },
-  { normal: MobTgS, hover: MobTgH, link: telegramLink },
-  // { normal: MobTikS, hover: MobTikH, link: tiktokLink },
-]
+// const socialsData = [
+//   // { normal: MobInstS, hover: MobInstH, link: instagramLink },
+//   { normal: MobFbS, hover: MobFbH, link: facebookLink },
+//   { normal: MobTgS, hover: MobTgH, link: telegramLink },
+//   // { normal: MobTikS, hover: MobTikH, link: tiktokLink },
+// ]
 
 const MobBurgerMenu: React.FC = () => {
   const { t } = useStaticTranslations()
@@ -151,7 +151,7 @@ const MobBurgerMenu: React.FC = () => {
                 type="text"
                 className={style.header_center__form_inputs__nameInput}
                 id="name"
-                placeholder={t('headerForm.name.placeholder')}
+                placeholder="Ваше ім&apos;я"
                 {...register('name', {
                   required: false,
                   minLength: 2,
@@ -184,7 +184,7 @@ const MobBurgerMenu: React.FC = () => {
             <div className={style.header_center__form_btns}>
               <div className={style.header_center__form_btns__btnsBox}>
                 <button className={style.header_center__form_btns__btnsBox_btn}>
-                  {t('headerForm.btn.name')}
+                  Надіслати
                 </button>
                 {/*<button*/}
                 {/*  className={style.header_center__form_btns__btnsBox_btnTg}*/}
@@ -195,30 +195,24 @@ const MobBurgerMenu: React.FC = () => {
               </div>
               <div className={style.header_center__form_btns__txtsBox}>
                 <p className={style.header_center__form_btns__txtsBox_txt}>
-                  <DotIcon fill="#FFAC1C" /> {t('headerForm.tel.txt')}
+                  <DotIcon fill="#FFAC1C" /> *Поля з позначкою є обов&apos;язковими для заповнення
                 </p>
                 <p className={style.header_center__form_btns__txtsBox_txt}>
-                  {t('headerForm.name.txt')}
+                  *Натискаючи кнопку, ви дозволяєте обробку персональних даних
                 </p>
               </div>
             </div>
           </form>
           <div className={style.header_center__links}>
             <ContactItem
-              icon={MobMailIcon}
-              text={eMail}
-              subText={t('header.telDropdown.mailSubText')}
-              link={`mailto:${eMail}`}
-            />
-            <ContactItem
               icon={MobTelIcon}
-              text={mobTel}
-              subText={t('header.telDropdown.telSubText')}
-              link={`tel:${mobTel}`}
+              text="+38 055 555 55 55"
+              subText="Зворотний дзвінок"
+              link="tel:+380555555555"
             />
           </div>
         </div>
-        <div className={style.header_bottom}>
+        {/* <div className={style.header_bottom}>
           {socialsData.map((soc, index) => (
             <SocialMediaIcon
               key={index}
@@ -227,7 +221,7 @@ const MobBurgerMenu: React.FC = () => {
               link={soc.link}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   )
@@ -261,32 +255,32 @@ const ContactItem: React.FC<ContactItemProps> = ({
   </a>
 )
 
-interface SocialMediaIconProps {
-  normal: string | StaticImageData
-  hover: string | StaticImageData
-  link: string
-}
+// interface SocialMediaIconProps {
+//   normal: string | StaticImageData
+//   hover: string | StaticImageData
+//   link: string
+// }
 
-const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({
-  normal,
-  hover,
-  link,
-}) => {
-  const [isHovered, setIsHovered] = useState(false)
+// const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({
+//   normal,
+//   hover,
+//   link,
+// }) => {
+//   const [isHovered, setIsHovered] = useState(false)
 
-  return (
-    <a href={link} target="_blank" rel="noopener noreferrer">
-      <Image
-        src={isHovered ? hover : normal}
-        alt="social-icon"
-        onMouseDown={() => setIsHovered(true)}
-        onMouseUp={() => setIsHovered(false)}
-        className={style.header_bottom__img}
-        // width={24}
-        // height={24}
-      />
-    </a>
-  )
-}
+//   return (
+//     <a href={link} target="_blank" rel="noopener noreferrer">
+//       <Image
+//         src={isHovered ? hover : normal}
+//         alt="social-icon"
+//         onMouseDown={() => setIsHovered(true)}
+//         onMouseUp={() => setIsHovered(false)}
+//         className={style.header_bottom__img}
+//         // width={24}
+//         // height={24}
+//       />
+//     </a>
+//   )
+// }
 
 export { MobBurgerMenu }

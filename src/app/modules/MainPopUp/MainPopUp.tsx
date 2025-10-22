@@ -15,9 +15,9 @@ import { sendInTg, sendInCrm, THANK_ROUTE } from '@/constants'
 import style from './MainPopUp.module.css'
 import 'react-international-phone/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import popUpImage from '@/assets/Icons/MainBlock/popup_image.webp'
-import ExitIcon from '@/assets/Icons/MainBlock/ExitIcon.webp'
-import mobMenuCloseBtn from '@/assets/Icons/Header/mobMenuCloseBtn.webp'
+// import popUpImage from '@/assets/Icons/MainBlock/popup_image.webp'
+import { ExitIcon } from '@/assets/Icons/MainBlock/mainPage'
+import { mobMenuCloseBtn } from '@/assets/Icons/Header/header'
 import { useWindowSize } from '@/hooks'
 import { Toastify } from '@/app/components/Toastify/Toastify'
 import { DotIcon } from '@/app/components/DotIcon/DotIcon'
@@ -166,12 +166,6 @@ const MainPopUp: React.FC = () => {
 
   return (
     <Modal show={show} onHide={handleClose} className={style.myModal}>
-      <Image
-        src={popUpImage || '/placeholder.svg'}
-        alt="Pop-up background"
-        layout="fill"
-        objectFit="cover"
-      />
       <Modal.Body>
         <Image
           src={width > 720 ? ExitIcon : mobMenuCloseBtn}

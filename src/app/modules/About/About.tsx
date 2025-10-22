@@ -8,10 +8,10 @@ import { AboutDone, AboutImage } from '@/assets/Images/About/index'
 // import { popUpStore } from '@/app/modules/MainPopUp/popUpStore'
 
 const aboutItems = [
-  'Безкоштовна підтримка – ми допомагаємо підприємцям без фінансових внесків',
-  'Практичні рішення – лише дієві поради та досвід експертів',
-  'Об’єднання бізнесу – формуємо спільноту власників інтернет-магазинів',
-  'Актуальність – підтримка в адаптації до нових умов ринку ',
+  'Безкоштовна допомога – ми надаємо підтримку без фінансових внесків',
+  'Практична допомога – лише дієва підтримка та турбота',
+  'Об\'єднання добра – формуємо спільноту волонтерів та партнерів',
+  'Актуальність – підтримка в найскладніші часи',
 ]
 
 const About: React.FC = () => {
@@ -27,20 +27,16 @@ const About: React.FC = () => {
             </p>
             <p className="about_left_text">
               <span className="about_left_text_span">
-                Асоціація власників інтернет-магазинів
+                Благодійна організація &quot;Самотня свічка&quot;
               </span>{' '}
-              – це громадська організація, що об&apos;єднує підприємців, які ведуть
-              онлайн-торгівлю.{' '}
+              – це фонд, що об&apos;єднує людей, які хочуть допомогти похилим людям.{' '}
               <span className="about_left_text_span">Наша місія</span> –
-              допомогти малому бізнесу розвиватися в умовах війни, надаючи
-              безкоштовні консультації, освітні матеріали та можливості для
-              співпраці.
+              дарувати тепло і турботу людям похилого віку в геріатричних центрах
+              України, надаючи їм підтримку та увагу.
             </p>
-            <a href="/about">
-              <button className={style.box_main__btn}>
-                Детальніше про нас
-              </button>
-            </a>
+            <button className={style.box_main__btn} onClick={() => document.getElementById('geography')?.scrollIntoView({ behavior: 'smooth' })}>
+              Дізнатися більше
+            </button>
           </div>
           <div className="about_center_block">
             <Image className="about_block_image" src={AboutImage} alt="AboutImage" />
