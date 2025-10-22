@@ -106,26 +106,24 @@
 //   )
 // }
 
-'use client'
+"use client"
 
-import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl'
+import { NextIntlClientProvider, AbstractIntlMessages } from 'next-intl'
 import { MainPopUp } from '@/app/modules/MainPopUp/MainPopUp'
 import Script from 'next/script'
 import './globals.css'
 
 interface ClientLayoutProps {
   children: React.ReactNode
-  locale: string
   messages: AbstractIntlMessages
 }
 
 export default function ClientLayout({
   children,
-  locale,
   messages,
 }: ClientLayoutProps) {
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale="uk" messages={messages}>
       {/* Facebook Meta Pixel */}
       <Script id="facebook-pixel" strategy="afterInteractive">
         {`

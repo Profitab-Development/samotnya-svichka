@@ -30,7 +30,6 @@
 //   )
 // }
 
-import { getLocale, getMessages } from 'next-intl/server'
 import { ReactNode } from 'react'
 import ClientLayout from '@/app/ClientLayout'
 import '../assets/Fonts/stylesheet.css'
@@ -52,11 +51,10 @@ export default async function RootLayout({
 }: {
   children: ReactNode
 }) {
-  const locale = await getLocale()
-  const messages = await getMessages()
+  const messages = (await import('../../messages/ua.json')).default
 
   return (
-    <html lang={locale}>
+    <html lang={'uk'} suppressHydrationWarning={true}>
       <head>
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
@@ -70,7 +68,7 @@ export default async function RootLayout({
         </Script>
         {/* End Google Tag Manager */}
       </head>
-      <body>
+      <body suppressHydrationWarning={true}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -82,7 +80,7 @@ export default async function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
 
-        <ClientLayout locale={locale} messages={messages}>
+        <ClientLayout messages={messages}>
           {children}
         </ClientLayout>
       </body>

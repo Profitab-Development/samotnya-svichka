@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import style from './Breadcrumbs.module.css'
 import { ArrowIcon } from './ArrowIcon'
 import { useRouter, usePathname } from 'next/navigation'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 
 interface Link {
   name: string
@@ -17,7 +17,7 @@ interface BreadcrumbsProps {
 }
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ links }) => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   const [isHovered, setIsHovered] = useState(false)
   const router = useRouter()
   const pathname = usePathname()

@@ -8,7 +8,7 @@ import { Modal } from 'react-bootstrap'
 import { useForm } from 'react-hook-form'
 import { PhoneNumberUtil } from 'google-libphonenumber'
 import { PhoneInput } from 'react-international-phone'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import { toast, ToastContainer } from 'react-toastify'
 import { popUpStore } from './popUpStore'
 import { sendInTg, sendInCrm, THANK_ROUTE } from '@/constants'
@@ -51,7 +51,7 @@ interface FormData {
 }
 
 const MainPopUp: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   const { width } = useWindowSize()
   const router = useRouter()
   const show = popUpStore((state) => state.show)

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import { StaticImageData } from 'next/image'
 import style from './OurServices.module.css'
 import ServiceCard from './ServiceCard/ServiceCard'
@@ -22,7 +22,7 @@ interface ServiceInfo {
 }
 
 const OurServices: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   const router = useRouter()
 
   const ourServicesText: ServiceInfo[] = [

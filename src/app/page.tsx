@@ -3,10 +3,6 @@ import { MainBlock } from '@/app/modules/MainBlock'
 import About from '@/app/modules/About/About'
 import Geography from '@/app/modules/Geography/Geography'
 import Logo from '@/app/modules/Logo/Logo'
-import { OurServices } from '@/app/modules/OurServices'
-import { Prices } from '@/app/modules/PricesInstagram'
-import { FormSecond } from '@/app/modules/FormSecond'
-import Blog from '@/app/modules/Blog/Blog'
 import { Footer } from '@/app/modules/Footer/Footer'
 import DevelopedBy from '@/app/modules/Developedby/DevelopedBy'
 
@@ -21,7 +17,7 @@ export function generateMetadata() {
 
 export default function Home() {
   return (
-    <div>
+    <div suppressHydrationWarning={true}>
       <Header />
       <MainBlock />
       <About />
