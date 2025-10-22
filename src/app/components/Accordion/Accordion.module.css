@@ -1,0 +1,94 @@
+.accordion {
+  border-radius: 3px;
+  background: #F3F3FE;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  width: 1140px;
+  padding: 25px 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: inherit;
+}
+.header_title {
+  color: #212121;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.header_icon {
+  transition: transform 0.4s ease;
+}
+
+.openIcon {
+  transform: rotate(0deg);
+}
+
+.closedIcon {
+  transform: rotate(45deg);
+}
+
+.content {
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+.content_txt {
+  color: #212121;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 24px;
+  margin-bottom: 0;
+  width: 95%;
+}
+
+.closed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.open {
+  max-height: 200px;
+  opacity: 1;
+}
+
+@media (max-width: 1180px) {
+  .accordion {
+    width: 720px;
+  }
+}
+@media (max-width: 720px) {
+  .accordion {
+    width: 320px;
+    padding: 16px 12px;
+  }
+  .header {
+    display: flex;
+  }
+  .header_title {
+    font-size: 14px;
+  }
+  .open {
+    max-height: 500px;
+  }
+  .content {
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+  .content_txt {
+    color: #212121;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=Accordion.module.css.map */

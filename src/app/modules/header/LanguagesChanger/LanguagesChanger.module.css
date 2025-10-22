@@ -1,0 +1,142 @@
+@keyframes activeBackdrop {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.wrap {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  height: 37px;
+  display: flex;
+  z-index: 11;
+}
+.wrap_box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wrap_box__flag {
+  width: 16px;
+  height: 16px;
+}
+.wrap_box__lang {
+  color: #212121;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.wrap_box__arrow {
+  width: 16px;
+  height: 9px;
+}
+.wrap_add {
+  width: 80px;
+  position: absolute;
+  opacity: 0;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 5px 10px;
+  border-radius: 3px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 12;
+}
+.wrap_add__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 3px;
+  gap: 6px;
+  padding: 10px;
+}
+.wrap_add__box:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.wrap_addActive {
+  animation: active 0.5s forwards;
+}
+.wrap_addDisable {
+  visibility: hidden;
+}
+
+.backdrop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+.backdrop_active {
+  animation: activeBackdrop 0.3s forwards;
+}
+
+.interacted .wrap_addDisable {
+  animation: disable 0.3s forwards;
+}
+.interacted .wrap_box__arrowActive {
+  animation: rotate 0.3s forwards;
+}
+.interacted .wrap_box__arrowDisable {
+  animation: rotateBack 0.3s forwards;
+}
+
+@keyframes active {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(90%) translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(110%) translateX(-50%);
+  }
+}
+@keyframes disable {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(110%) translateX(-50%);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(90%) translateX(-50%);
+    visibility: hidden;
+    display: none;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotateBack {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=LanguagesChanger.module.css.map */

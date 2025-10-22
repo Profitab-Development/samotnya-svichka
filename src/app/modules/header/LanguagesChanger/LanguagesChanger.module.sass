@@ -1,0 +1,104 @@
+@import "../../../../UI/colors"
+
+
+.wrap
+  cursor: pointer
+  -webkit-user-select: none
+  user-select: none
+  position: relative
+  height: 37px
+  display: flex
+  z-index: 11
+  &_box
+    display: flex
+    align-items: center
+    gap: 6px
+    &__flag
+      width: 16px
+      height: 16px
+    &__lang
+      color: $textColor
+      font-family: 'Montserrat', sans-serif
+      font-size: 14px
+      font-weight: 600
+    &__arrow
+      width: 16px
+      height: 9px
+
+  &_add
+    width:  80px
+    position: absolute
+    opacity: 0
+    bottom: 10px
+    left: 50%
+    transform: translateX(-50%)
+    padding: 15px 5px 10px
+    border-radius: 3px
+    background: #FFF
+    display: flex
+    flex-direction: column
+    align-items: center
+    z-index: 12
+    &__box
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      border-radius: 3px
+      gap: 6px
+      padding: 10px
+      &:hover
+        background: rgba(0, 0, 0, 0.1)
+  &_addActive
+    animation: active .5s forwards
+  &_addDisable
+    visibility: hidden
+
+
+.backdrop
+ @include backdrop
+
+
+.interacted
+  .wrap_addDisable
+    animation: disable .3s forwards
+  .wrap_box__arrowActive
+    animation: rotate .3s forwards
+  .wrap_box__arrowDisable
+    animation: rotateBack .3s forwards
+
+
+@keyframes active
+  from
+    opacity: 0
+    visibility: hidden
+    transform: translateY(90%) translateX(-50%)
+  to
+    opacity: 1
+    visibility: visible
+    transform: translateY(110%) translateX(-50%)
+
+@keyframes disable
+  from
+    opacity: 1
+    visibility: visible
+    transform: translateY(110%) translateX(-50%)
+  to
+    opacity: 0
+    transform: translateY(90%) translateX(-50%)
+    visibility: hidden
+    display: none
+
+
+@keyframes rotate
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(180deg)
+
+@keyframes rotateBack
+  from
+    transform: rotate(180deg)
+  to
+    transform: rotate(0deg)
+

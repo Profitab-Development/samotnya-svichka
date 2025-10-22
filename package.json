@@ -1,0 +1,40 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build && cp -r public .next/standalone/public && cp -r .next/static .next/standalone/.next/static",
+    "start": "node .next/standalone/server.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "classnames": "^2.5.1",
+    "google-libphonenumber": "^3.2.40",
+    "next": "15.2.1",
+    "next-intl": "^3.26.5",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-hook-form": "^7.54.2",
+    "react-international-phone": "^4.5.0",
+    "react-scroll": "^1.9.3",
+    "react-toastify": "^11.0.5",
+    "sass": "^1.85.1",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/google-libphonenumber": "^7.4.30",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-scroll": "^1.8.10",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.1",
+    "prettier": "3.5.3",
+    "typescript": "^5"
+  }
+}

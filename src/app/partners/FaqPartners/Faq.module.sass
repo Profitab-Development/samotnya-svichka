@@ -1,0 +1,80 @@
+@import '../../../UI/colors'
+
+.bg
+  background-color: $darkBlue
+
+.wrap
+  padding-top: 136px
+  padding-bottom: 80px
+  display: flex
+  flex-direction: column
+  align-items: center
+  &_titleWrap
+    position: relative
+    &__title
+      color: #FFF
+      text-align: center
+      font-family: 'Montserrat', sans-serif
+      font-size: 40px
+      font-style: normal
+      font-weight: 700
+      line-height: normal
+      text-transform: uppercase
+      position: relative
+      z-index: 1
+      margin-bottom: 0
+      & > span
+        color: #D92D20
+    &__back
+      width: 100%
+      color: #1E193E
+      text-align: center
+      font-family: 'Montserrat', sans-serif
+      font-size: 95px
+      font-style: normal
+      font-weight: 900
+      line-height: normal
+      letter-spacing: 0.95px
+      text-transform: uppercase
+      position: absolute
+      top: -130%
+      z-index: 0
+      margin-bottom: 0
+  &_accordion
+    width: 100%
+    padding-top: 107px
+    background-image: url("../../../assets/Images/Faq/FaqBg.webp")
+    background-size: cover
+    background-repeat: no-repeat
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 20px
+
+
+
+@media (max-width: 1180px)
+  .wrap
+    &_titleWrap
+      &__back
+        top: -70%
+    &_accordion
+      padding-top: 80px
+      background-image: url("../../../assets/Images/Faq/FaqBg.webp")
+      background-size: contain
+
+
+@media (max-width: 720px)
+  .wrap
+    padding-top: 99px
+    display: flex
+    &_titleWrap
+      &__title
+        font-size: 30px
+      &__back
+        font-size: 35px
+        letter-spacing: 0.35px
+        top: -20%
+    &_accordion
+      padding-top: 80px
+      background-size: contain

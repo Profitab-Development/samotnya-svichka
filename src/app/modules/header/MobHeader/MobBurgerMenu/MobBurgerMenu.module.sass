@@ -1,0 +1,197 @@
+@import "../../../../../UI/colors"
+
+.wrap
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: #F6F8FF
+  transform: translateY(-100%)
+  visibility: hidden
+  z-index: 12
+  &_active
+    animation: active .5s forwards
+
+.header
+  display: flex
+  flex-direction: column
+  &_top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    user-select: none
+    padding: 20px 0
+    &__logo
+      height: 30px
+      width: 85px
+    &__right
+      display: flex
+      align-items: center
+      gap: 20px
+      &_burger
+        width: 40px
+        height: 34px
+        display: flex
+        align-items: center
+        justify-content: center
+        &:active
+          background: #F6F8FF
+        &__img
+          width: 25px
+          height: 20px
+  &_center
+    display: flex
+    flex-direction: column
+    padding-top: 40px
+    padding-bottom: 40px
+    gap: 40px
+    &__form
+      display: flex
+      flex-direction: column
+      gap: 20px
+      &_inputs
+        display: flex
+        flex-direction: column
+        gap: 14px
+        &__nameInput
+          border-radius: 3px
+          border: 1px solid #D92D20
+          padding: 17px 18px
+          outline: none
+          width: 100%
+          height: 55px
+          &::placeholder
+            color: #0B062D
+            font-family: 'Montserrat', sans-serif
+            font-size: 16px
+            font-weight: 400
+        &__telWrap
+          border-radius: 3px
+          border: 1px solid #D92D20
+          width: 100%
+          height: 55px
+          display: flex
+          align-items: center
+          position: relative
+          &_inp
+            align-items: center!important
+            border: none!important
+            width: 100%!important
+            height: 100% !important
+            & > :nth-child(1)
+              height: 100%!important
+              & > :nth-child(1)
+                height: 100%!important
+                border: none!important
+                padding-left: 18px!important
+            & > :nth-child(2)
+              font-family: 'Montserrat', sans-serif!important
+              font-size: 16px!important
+              font-style: normal!important
+              font-weight: 400!important
+              line-height: normal!important
+              width: 100% !important
+              height: 100%!important
+              border: none!important
+          &_dot
+            position: absolute
+            right: 10px
+            top: 10px
+      &_btns
+        display: flex
+        flex-direction: column
+        gap: 12px
+        &__btnsBox
+          display: flex
+          flex-direction: column
+          gap: 14px
+          &_btn
+            border-radius: 3px
+            background: #D92D20
+            border: none
+            width: 100%
+            height: 55px
+            padding: 15px 12px
+            color: #FFF
+            text-align: center
+            font-family: 'Montserrat', sans-serif
+            font-size: 14px
+            font-weight: 500
+          &_btnTg
+            text-align: center
+            width: 100%
+            height: 55px
+            flex-shrink: 0
+            border-radius: 3px
+            border: 2px dashed #1D93D2
+            color: #1D93D2
+            font-family: 'Montserrat', sans-serif
+            font-size: 16px
+            font-weight: 500
+            background: inherit
+        &__txtsBox
+          display: flex
+          flex-direction: column
+          gap: 10px
+          &_txt
+            color: #363636
+            font-family: 'Montserrat', sans-serif
+            font-size: 10px
+            font-weight: 400
+            line-height: 136.5%
+            margin: 0
+    &__links
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      gap: 14px
+      &_box
+        width: 100%
+        display: flex
+        align-items: center
+        gap: 20px
+        text-decoration: none
+        &__img
+          width: 28px
+          height: 25px
+        &__wrap
+          display: flex
+          flex-direction: column
+          gap: 4px
+          &_txt
+            color: $textColor
+            font-family: 'Montserrat', sans-serif
+            font-size: 14px
+            font-weight: 600
+            line-height: 128%
+          &_time
+            color: $textColor
+            font-family: 'Montserrat', sans-serif
+            font-size: 12px
+            font-style: normal
+            font-weight: 400
+            line-height: 128%
+  &_bottom
+    display: flex
+    align-items: center
+    gap: 1px
+    &__img
+      width: 80px
+      height: 80px
+
+
+@keyframes active
+  from
+    opacity: 0
+    visibility: hidden
+    transform: translateY(-100%)
+  to
+    opacity: 1
+    visibility: visible
+    transform: translateY(0%)
+
+
+@media (min-width: 720px)
+  .wrap .header
+    display: none

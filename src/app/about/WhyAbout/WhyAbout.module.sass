@@ -1,0 +1,383 @@
+@import "../../../UI/colors"
+
+.why_block
+  display: flex
+  padding-top: 90px
+  padding-bottom: 90px
+  flex-direction: column
+  align-items: center
+  gap: 70px
+  position: relative
+
+
+.wrap
+  padding-top: 81px
+  padding-bottom: 32px
+  display: flex
+  flex-direction: column
+  gap: 80px
+  align-items: center
+  &_top
+    position: relative
+    display: flex
+    flex-direction: column
+    gap: 20px
+    align-items: center
+    &__title
+      display: flex
+      flex-direction: row
+      align-items: center
+      color: $textColor
+      font-family: 'Montserrat', sans-serif
+      font-size: 45px
+      font-style: normal
+      font-weight: 700
+      line-height: normal
+      letter-spacing: 0.45px
+      text-transform: uppercase
+      position: relative
+      z-index: 1
+      margin-bottom: 0
+      & > span
+        color: $mainBlue
+    &__back
+      position: absolute
+      top: -100%
+      z-index: 0
+      width: 100%
+      color: #FFF1F1
+      text-align: center
+      font-family: 'Montserrat', sans-serif
+      font-size: 95px
+      font-style: normal
+      font-weight: 900
+      line-height: normal
+      letter-spacing: 0.95px
+      text-transform: uppercase
+
+.why_content_block
+  display: flex
+  flex-direction: row
+  gap: 70px
+  margin-top: 70px
+  padding-left: 130px
+  padding-right: 130px
+      
+.why_image
+  height: 580px
+  width: auto
+
+.why_position_block
+  border-radius: 3px
+  border: 2px solid var(--Black, #000)
+  background: var(--White, #FFF)
+  display: inline-flex
+  padding: 18px 24px
+  justify-content: center
+  align-items: center
+  gap: 10px
+  margin-bottom: 12px
+
+.why_position_text
+  color: var(--Black, #000)
+  font-family: Montserrat, sans-serif
+  font-size: 22px
+  font-style: normal
+  font-weight: 700
+  line-height: 140%
+  text-transform: uppercase
+  margin: 0
+  
+.why_anatoliy_span
+  color: var(--Black, #000)
+  font-family: Montserrat, sans-serif
+  font-size: 28px
+  font-style: normal
+  font-weight: 700
+  line-height: 120%
+  margin: 0
+
+.why_anatoliy_text
+  color: var(--Black, #000)
+  font-family: Montserrat, sans-serif
+  font-size: 24px
+  font-style: normal
+  font-weight: 600
+  line-height: 120%
+  margin: 0
+
+.why_left
+  display: flex
+  flex-direction: column
+  gap: 24px
+
+.why_left_top
+  border-bottom: 2px dashed #DCDCDC
+  padding-bottom: 24px
+
+.why_left_bottom_text
+  color: var(--BG-Section, #404040)
+  font-family: Montserrat, sans-serif
+  font-size: 21px
+  font-style: normal
+  font-weight: 400
+  line-height: 140%
+  margin: 0
+
+.left_btn_block
+  display: flex
+  flex-direction: row
+  gap: 20px
+  justify-content: flex-end
+  align-items: center
+  border-radius: 3px
+  border: none
+  padding: 24px
+  background-image: url("../../../assets/Images/AboutPage/Why/why_btn_bg.png")
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.left_btn_block_text
+  color: var(--White, #FFF)
+  text-align: center
+  font-family: Montserrat, sans-serif
+  font-size: 20px
+  font-style: normal
+  font-weight: 600
+  line-height: normal
+  margin: 0
+
+.left_btn_block_span
+  color: #FCCB06
+
+.left_btn
+  border-radius: 3px
+  border: 2px dashed var(--White, #FFF)
+  background: rgba(255, 255, 255, 0.00)
+  display: flex
+  width: 220px
+  height: 55px
+  justify-content: center
+  align-items: center
+  color: var(--White, #FFF)
+  text-align: center
+  font-family: Montserrat, sans-serif
+  font-size: 16px
+  font-style: normal
+  font-weight: 500
+  line-height: normal
+  margin: 0
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease
+  &:hover
+    background: var(--White, #FFF)
+    color: #0B062D
+  
+.left_btn_link
+  text-decoration: none
+  
+
+
+@media (max-width: 1500px)
+  .wrap
+    padding-top: 80px
+    padding-bottom: 80px
+    gap: 80px
+    &_top
+      &__title
+        font-size: 35px
+      &__back
+        top: -100%
+        font-size: 85px
+
+  .why_content_block
+    display: flex
+    flex-direction: row
+    gap: 40px
+    margin-top: 70px
+    padding-left: 0px
+    padding-right: 0px
+    
+  .why_image
+    height: 600px
+    width: auto
+
+
+
+
+@media (max-width: 1180px)
+  .wrap
+    padding-top: 116px
+    padding-bottom: 88px
+    gap: 60px
+    &_top
+      &__title
+        font-size: 35px
+        letter-spacing: 0.35px
+      &__back
+        top: -30%
+        font-size: 75px
+        letter-spacing: 0.75px
+
+  .why_content_block
+    display: flex
+    flex-direction: column-reverse
+    gap: 40px
+    margin-top: 70px
+    padding-left: 0px
+    padding-right: 0px
+    align-items: center
+
+  .why_image
+    height: 500px
+    width: auto
+
+
+@media (max-width: 720px)
+
+  .why_block
+    display: flex
+    padding-top: 50px
+    padding-bottom: 50px
+  
+  .button
+    margin-top: 42px
+    height: 45px
+    width: 270px
+    padding: 19px 38px 19px 0
+
+  .prize
+    width: 80px
+    height: auto
+    display: block
+    bottom: -50px
+    right: 30px
+  .wrap
+    padding-top: 59px
+    padding-bottom: 105px
+    gap: 40px
+    &_top
+      &__title
+        font-size: 30px
+        letter-spacing: 0.35px
+        text-align: center
+        flex-direction: column
+      &__back
+        top: -12%
+        font-size: 30px
+        letter-spacing: 0.30px
+
+  .why_image
+    height: auto
+    width: 100%
+
+  .why_content_block
+    gap: 40px
+    margin-top: 40px
+    align-items: center
+
+  .why_position_block
+    border-radius: 3px
+    border: 2px solid var(--Black, #000)
+    background: var(--White, #FFF)
+    display: inline-flex
+    padding: 18px 24px
+    justify-content: center
+    align-items: center
+    gap: 10px
+    margin-bottom: 12px
+
+  .why_position_text
+    color: var(--Black, #000)
+    font-family: Montserrat, sans-serif
+    font-size: 15px
+    font-style: normal
+    font-weight: 700
+    line-height: 140%
+    text-transform: uppercase
+    margin: 0
+
+  .why_anatoliy_span
+    color: var(--Black, #000)
+    font-family: Montserrat, sans-serif
+    font-size: 22px
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+    margin: 0
+
+  .why_anatoliy_text
+    color: var(--Black, #000)
+    font-family: Montserrat, sans-serif
+    font-size: 20px
+    font-style: normal
+    font-weight: 600
+    line-height: 120%
+    margin: 0
+
+  .why_left
+    display: flex
+    flex-direction: column
+    gap: 24px
+    width: 100%
+
+  .why_left_top
+    border-bottom: 2px dashed #DCDCDC
+    padding-bottom: 24px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .why_left_bottom_text
+    color: var(--BG-Section, #404040)
+    font-family: Montserrat, sans-serif
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 140%
+    margin: 0
+
+  .left_btn_block
+    display: flex
+    flex-direction: column
+    gap: 20px
+    justify-content: flex-end
+    align-items: center
+    border-radius: 3px
+    border: none
+    padding: 24px
+    background-image: url("../../../assets/Images/AboutPage/Why/why_btn_bg_tel.png")
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  .left_btn_block_text
+    color: var(--White, #FFF)
+    text-align: center
+    font-family: Montserrat, sans-serif
+    font-size: 16px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    margin: 0
+
+  .left_btn_block_span
+    color: #FCCB06
+
+  .left_btn
+    border-radius: 3px
+    border: 2px dashed var(--White, #FFF)
+    background: rgba(255, 255, 255, 0.00)
+    display: flex
+    width: 220px
+    height: 55px
+    justify-content: center
+    align-items: center
+    color: var(--White, #FFF)
+    text-align: center
+    font-family: Montserrat, sans-serif
+    font-size: 16px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    margin: 0

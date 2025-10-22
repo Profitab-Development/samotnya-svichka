@@ -1,0 +1,644 @@
+@import "../../../UI/colors"
+.button
+  display: flex
+  gap: 30px
+  align-items: center
+  background: transparent
+  width: 270px
+  height: 55px
+  justify-content: right
+  border-radius: 3px
+  border: 2px dashed var(--White, #FFF)
+  margin-top: 30px
+  color: var(--White, #FFF)
+  text-align: center
+  font-family: Montserrat, sans-serif
+  padding: 19px 38px 19px 0
+  font-size: 14px
+  font-style: normal
+  font-weight: 500
+  line-height: normal
+  cursor: pointer
+  text-decoration: none
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease
+  &:hover
+    background: var(--White, #FFF)
+    color: #0B062D
+    .buttonSvg
+      stroke: #0B062D
+.buttonSvg
+  stroke: white
+.bg
+  background: #FFF
+.subtitle
+  color: #0B062D
+  text-align: center
+  font-family: Montserrat, sans-serif
+  font-size: 20px
+  font-style: normal
+  font-weight: 400
+  line-height: normal
+  letter-spacing: -0.2px
+  margin-top: 20px
+  span
+    font-weight: 600
+
+.wrap
+  padding-top: 81px
+  padding-bottom: 32px
+  display: flex
+  flex-direction: column
+  gap: 80px
+  align-items: center
+  &_top
+    position: relative
+    &__title
+      display: flex
+      flex-direction: column
+      align-items: center
+      color: $textColor
+      font-family: 'Montserrat', sans-serif
+      font-size: 45px
+      font-style: normal
+      font-weight: 700
+      line-height: normal
+      letter-spacing: 0.45px
+      text-transform: uppercase
+      position: relative
+      z-index: 1
+      margin-bottom: 0
+      & > span
+        color: $mainBlue
+    &__back
+      position: absolute
+      top: -40%
+      z-index: 0
+      width: 100%
+      color: #FFF1F1
+      text-align: center
+      font-family: 'Montserrat', sans-serif
+      font-size: 95px
+      font-style: normal
+      font-weight: 900
+      line-height: normal
+      letter-spacing: 0.95px
+      text-transform: uppercase
+  &_bottom
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: auto auto
+    row-gap: 68px
+    column-gap: 12px
+    &__box
+      position: relative
+      width: 492px
+      height: 300px
+      &_label
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 1
+        display: inline-flex
+        padding: 5px 14px
+        justify-content: center
+        align-items: center
+        gap: 4px
+        border-radius: 20px
+        background: $mainYellow
+        color: $darkBlue
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.14px
+        & > span
+          font-weight: 600
+      &_main
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 0
+        width: 478px
+        height: 300px
+        padding: 60px 50px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        border-radius: 3px
+        background-image: url("../../../assets/Images/Prices/Price1.webp")
+        background-size: cover
+        background-position: right bottom
+        &__title
+          color: var(--White, #FFF)
+          font-family: Montserrat, sans-serif
+          font-size: 36px
+          font-style: normal
+          font-weight: 700
+          line-height: 128% /* 46.08px */
+          letter-spacing: 0.36px
+          text-transform: uppercase
+        &__subtitle
+          color: var(--White, #FFF)
+          font-family: Montserrat, sans-serif
+          font-size: 24px
+          font-style: normal
+          font-weight: 600
+          line-height: 128%
+          letter-spacing: 0.24px
+          text-transform: uppercase
+        &__prices
+          display: flex
+          flex-direction: column
+          gap: 12px
+          &_top
+            display: flex
+            gap: 4px
+            align-items: flex-end
+            &__price
+              color: #FFF
+              text-align: center
+              font-family: 'Montserrat', sans-serif
+              font-size: 52px
+              font-style: normal
+              font-weight: 400
+              line-height: normal
+              letter-spacing: 0.52px
+              text-transform: capitalize
+            &__text
+              color: #FFF
+              font-family: 'Montserrat', sans-serif
+              font-size: 25px
+              font-style: normal
+              font-weight: 400
+              line-height: normal
+              letter-spacing: 0.25px
+              text-transform: lowercase
+          &_bottom
+            color: #FFF
+            font-family: 'Montserrat', sans-serif
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: 128%
+            letter-spacing: 0.16px
+            text-transform: uppercase
+    &__boxSecond
+      position: relative
+      width: 492px
+      height: 300px
+      &_label
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 1
+        display: inline-flex
+        padding: 5px 14px
+        justify-content: center
+        align-items: center
+        gap: 4px
+        border-radius: 20px
+        background: $mainYellow
+        color: $darkBlue
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.14px
+        & > span
+          font-weight: 600
+      &_main
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 0
+        width: 478px
+        height: 300px
+        padding: 60px 50px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        border-radius: 3px
+        background-image: url("../../../assets/Images/Prices/Price2.webp")
+        background-size: cover
+        background-position: right bottom
+
+        &__title
+          color: var(--White, #FFF)
+          font-family: Montserrat, sans-serif
+          font-size: 36px
+          font-style: normal
+          font-weight: 700
+          line-height: 128% /* 46.08px */
+          letter-spacing: 0.36px
+          text-transform: uppercase
+        &__prices
+          display: flex
+          flex-direction: column
+          gap: 12px
+          &_top
+            display: flex
+            gap: 4px
+            align-items: flex-end
+            &__price
+              color: #FFF
+              text-align: center
+              font-family: 'Montserrat', sans-serif
+              font-size: 52px
+              font-style: normal
+              font-weight: 400
+              line-height: normal
+              letter-spacing: 0.52px
+              text-transform: capitalize
+            &__text
+              color: #FFF
+              font-family: 'Montserrat', sans-serif
+              font-size: 25px
+              font-style: normal
+              font-weight: 400
+              line-height: normal
+              letter-spacing: 0.25px
+              text-transform: lowercase
+          &_bottom
+            color: #FFF
+            font-family: 'Montserrat', sans-serif
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: 128%
+            letter-spacing: 0.16px
+            text-transform: uppercase
+    &__boxThird
+      position: relative
+      width: 471px
+      height: 274px
+      &_bg
+        width: 456.237px
+        height: 245.154px
+        transform: rotate(3.65deg) translateY(50%)
+        flex-shrink: 0
+        border-radius: 3px
+        border: 2px dashed $darkBlue
+        position: absolute
+        bottom: 50%
+        right: 0
+        &__arrow
+          position: absolute
+          bottom: -60%
+          right: 0
+          height: 173.5px
+          width: auto
+          z-index: 99
+
+      &_main
+        border-radius: 3px
+        background: $mainYellow
+        position: absolute
+        right: 50%
+        bottom: 50%
+        transform: translateX(50%) translateY(47%)
+        display: inline-flex
+        width: 433px
+        height: 232px
+        padding: 60px 50px
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        gap: 10px
+        &__title
+          color: $darkBlue
+          font-family: 'Montserrat', sans-serif
+          font-size: 32px
+          font-style: normal
+          font-weight: 700
+          line-height: 128%
+          letter-spacing: 0.32px
+          text-transform: uppercase
+        &__subtitle
+          color: #5C4B2F
+          font-family: 'Montserrat', sans-serif
+          font-size: 15px
+          font-style: normal
+          font-weight: 500
+          line-height: 128%
+          letter-spacing: 0.16px
+          text-transform: uppercase
+    &__boxBottom
+      grid-column: 1 / span 2
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      gap: 8px
+      padding: 0 14px
+      &_label
+        color: $darkBlue
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.14px
+        border-radius: 20px
+        background: $mainYellow
+        display: flex
+        padding: 5px 14px
+        justify-content: center
+        align-items: center
+      &_text
+        color: $textColor
+        font-family: 'Montserrat', sans-serif
+        font-size: 16px
+        font-style: normal
+        font-weight: 500
+        line-height: 18px
+        letter-spacing: 0.16px
+
+.prize
+  height: 80px
+  position: absolute
+  font-size: 60px
+  bottom: -30px
+  right: 60px
+  transform: rotate(-15deg)
+  text-shadow: 0px 0px 54.547px rgba(246, 73, 73, 0.27), 0px 0px 13.954px rgba(246, 73, 73, 0.17)
+  font-family: Montserrat, sans-serif
+  font-style: normal
+  font-weight: 400
+  line-height: normal
+  display: none
+
+@media (max-width: 1500px)
+  .prize
+    display: none
+  .wrap
+    padding-top: 80px
+    padding-bottom: 80px
+    gap: 80px
+    &_top
+      &__title
+        font-size: 35px
+      &__back
+        top: -40%
+        font-size: 85px
+    &_bottom
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-template-rows: auto auto
+      row-gap: 29px
+      column-gap: 20px
+      &__box
+        width: 353px
+        height: 250px
+        &_main
+          width: 353px
+          height: 250px
+          padding: 60px 24px 32px 24px
+          &__title
+            font-size: 32px
+            margin: 0
+          &__prices
+            &_top
+              &__price
+                font-size: 44px
+                letter-spacing: 0.44px
+              &__text
+                font-size: 16px
+                letter-spacing: 0.16px
+      &__boxSecond
+        width: 367px
+        height: 250px
+        &_main
+          width: 353px
+          height: 250px
+          padding: 60px 24px 32px 24px
+          &__title
+            font-size: 32px
+            margin: 0
+      &__boxThird
+        width: 367px
+        height: 274px
+        &_bg
+          width: 356px
+          height: 245px
+          transform: rotate(2.852deg) translateY(50%)
+          &__arrow
+            bottom: -67%
+            width: 210px
+            height: 164px
+        &_main
+          right: 50%
+          bottom: 50%
+          transform: translateX(50%) translateY(42%)
+          width: 338px
+          height: 212px
+          padding: 60px 50px
+          &__title
+            font-size: 24px
+            letter-spacing: 0.24px
+          &__subtitle
+            font-size: 16px
+
+  .button
+    width: 220px
+    height: 45px
+    padding: 19px 15px 19px 0
+
+@media (max-width: 1180px)
+  .wrap
+    padding-top: 116px
+    padding-bottom: 88px
+    gap: 60px
+    &_top
+      &__title
+        font-size: 35px
+        letter-spacing: 0.35px
+      &__back
+        top: -30%
+        font-size: 75px
+        letter-spacing: 0.75px
+    &_bottom
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: auto auto
+      row-gap: 20px
+      column-gap: 8px
+      &__box
+        width: 355px
+        height: 310px
+        &_main
+          width: 350px
+          height: 310px
+          padding: 60px 24px 32px 24px
+          background-image: url("../../../assets/Images/Prices/PriceMb1.webp")
+
+          &__prices
+            &_top
+              &__price
+                font-size: 44px
+                letter-spacing: 0.44px
+              &__text
+                font-size: 16px
+                letter-spacing: 0.16px
+      &__boxSecond
+        width: 355px
+        height: 310px
+        &_main
+          width: 350px
+          height: 310px
+          padding: 60px 50px 32px 24px
+          background-image: url("../../../assets/Images/Prices/PriceMb2.webp")
+
+          &__prices
+            &_bottom
+              font-size: 15px
+      &__boxThird
+        grid-column: 2 / span 1
+        grid-row: 2
+        width: 350px
+        height: 237px
+        &_bg
+          width: 350px
+          height: 207px
+          transform: rotate(2.938deg) translateY(50%)
+          bottom: 50%
+          &__arrow
+            bottom: -113%
+            transform: translateY(-128%)
+            width: 125px
+            height: 124px
+        &_main
+          transform: translateX(50%) translateY(48%)
+          width: 337px
+          height: 212px
+          &__title
+            font-size: 24px
+            letter-spacing: 0.32px
+          &__subtitle
+            font-size: 16px
+      &__boxBottom
+        grid-column: 1 / span 1
+        padding: 0 5px
+        &_text
+          font-size: 14px
+
+
+
+
+@media (max-width: 720px)
+  .button
+    margin-top: 42px
+    height: 45px
+    width: 270px
+    padding: 19px 38px 19px 0
+
+  .prize
+    width: 80px
+    height: auto
+    display: block
+    bottom: -50px
+    right: 30px
+  .wrap
+    padding-top: 59px
+    padding-bottom: 105px
+    gap: 40px
+    &_top
+      &__title
+        font-size: 30px
+        letter-spacing: 0.35px
+        text-align: center
+      &__back
+        top: -7%
+        font-size: 30px
+        letter-spacing: 0.30px
+    &_bottom
+      display: grid
+      justify-items: center
+      grid-template-columns: 1fr
+      grid-template-rows: auto auto auto auto
+      row-gap: 20px
+      &__box
+        width: 320px
+        height: 309px
+        &_label
+          & > span
+            font-weight: 400
+        &_main
+          width: 320px
+          height: 309px
+          padding: 40px 20px
+          &__title
+            font-size: 32px
+            letter-spacing: 0.20px
+          &__prices
+            &_top
+              &__price
+                font-size: 40px
+                letter-spacing: 0.40px
+              &__text
+                font-size: 16px
+                letter-spacing: 0.16px
+            &_bottom
+              font-size: 14px
+              letter-spacing: 0.14px
+      &__boxSecond
+        width: 320px
+        height: 309px
+        &_label
+          & > span
+            font-weight: 400
+        &_main
+          width: 320px
+          height: 309px
+          padding: 40px 20px
+          justify-content: flex-start
+          &__title
+            font-size: 32px
+            letter-spacing: 0.20px
+          &__prices
+            &_top
+              &__price
+                font-size: 40px
+                letter-spacing: 0.40px
+              &__text
+                font-size: 16px
+                letter-spacing: 0.16px
+            &_bottom
+              font-size: 14px
+              letter-spacing: 0.14px
+      &__boxThird
+        grid-column: 1
+        grid-row: auto
+        width: 320px
+        height: 162px
+        &_bg
+          width: 312px
+          height: 143px
+          transform: rotate(3.65deg) translateY(50%)
+          bottom: 50%
+          &__arrow
+            bottom: -81%
+            transform: translate(40%, -15%)
+            width: 100px
+            height: 100px
+        &_main
+          transform: translateX(50%) translateY(48%)
+          width: 300px
+          height: 138px
+          padding: 20px 12px
+          &__title
+            font-size: 20px
+            letter-spacing: 0.2px
+          &__subtitle
+            font-size: 14px
+            letter-spacing: 0.14px
+      &__boxBottom
+        grid-column: 1
+        grid-row: 3
+        padding: 0 12px
+        &_label
+          font-size: 12px
+          letter-spacing: -0.12px
+        &_text
+          font-size: 12px
+          line-height: 18px

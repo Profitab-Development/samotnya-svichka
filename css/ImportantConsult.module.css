@@ -1,0 +1,277 @@
+@keyframes activeBackdrop {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.mission_about_block {
+  display: flex;
+  padding: 90px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  align-self: stretch;
+  position: relative;
+}
+
+.wrap {
+  padding-top: 81px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+}
+.wrap_top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.wrap_top__title {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  color: #212121;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
+.wrap_top__title > span {
+  color: #D92D20;
+}
+.wrap_top__back {
+  position: absolute;
+  top: -50%;
+  z-index: 0;
+  width: 100%;
+  color: #FFF1F1;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 95px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.95px;
+  text-transform: uppercase;
+}
+
+.mission_subtile {
+  color: #0B062D;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.mission_subtile_span {
+  color: var(--Red, #D92D20);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.important_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.important_img_block {
+  position: relative;
+}
+
+.important_img {
+  height: 597px;
+  width: auto;
+  max-width: 476px;
+  object-fit: cover;
+}
+
+.important_text_block {
+  position: absolute;
+  bottom: 1%;
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 3px;
+  background: var(--White, #FFF);
+  margin: 24px;
+}
+
+.important_text {
+  color: var(--Black, #000);
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.mission_arrow {
+  position: absolute;
+  width: 170.5px;
+  height: auto;
+  top: 20%;
+  left: 20%;
+}
+
+@media (max-width: 1500px) {
+  .wrap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 80px;
+  }
+  .wrap_top__title {
+    font-size: 35px;
+  }
+  .wrap_top__back {
+    top: -50%;
+    font-size: 85px;
+  }
+  .mission_arrow {
+    position: absolute;
+    width: 150.5px;
+    height: auto;
+    top: 25%;
+    left: 15%;
+  }
+  .important_img {
+    height: 477px;
+    width: auto;
+    max-width: 476px;
+  }
+  .important_text {
+    color: var(--Black, #000);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1180px) {
+  .wrap {
+    padding-top: 116px;
+    padding-bottom: 88px;
+    gap: 60px;
+  }
+  .wrap_top__title {
+    font-size: 35px;
+    letter-spacing: 0.35px;
+  }
+  .wrap_top__back {
+    top: -30%;
+    font-size: 75px;
+    letter-spacing: 0.75px;
+  }
+  .mission_arrow {
+    display: none;
+  }
+  .important_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .important_img {
+    height: 400px;
+    width: auto;
+    max-width: 476px;
+  }
+}
+@media (max-width: 720px) {
+  .button {
+    margin-top: 42px;
+    height: 45px;
+    width: 270px;
+    padding: 19px 38px 19px 0;
+  }
+  .prize {
+    width: 80px;
+    height: auto;
+    display: block;
+    bottom: -50px;
+    right: 30px;
+  }
+  .wrap {
+    padding-top: 59px;
+    padding-bottom: 105px;
+    gap: 40px;
+  }
+  .wrap_top__title {
+    font-size: 30px;
+    letter-spacing: 0.35px;
+    text-align: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  .wrap_top__back {
+    top: -7%;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+  }
+  .mission_cards_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+  }
+  .mission_about_block {
+    display: flex;
+    padding: 50px 0px;
+  }
+  .mission_subtile {
+    color: #0B062D;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+  }
+  .important_img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .important_text_block {
+    position: absolute;
+    bottom: 1%;
+    display: flex;
+    padding: 12px;
+    gap: 12px;
+    margin: 12px;
+  }
+  .important_text {
+    color: var(--Black, #000);
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+  }
+  .important_content {
+    margin-top: 40px;
+  }
+}
+
+/*# sourceMappingURL=ExperienceEducation.module.css.map */

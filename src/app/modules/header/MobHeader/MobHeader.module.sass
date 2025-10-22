@@ -1,0 +1,45 @@
+@import "../../../../UI/colors"
+
+.wrap
+  height: 50px
+  background: #FFF
+  display: flex
+  align-items: center
+  position: relative
+  width: 100%
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  user-select: none
+  padding: 20px 0
+  &_logo
+    height: 30px
+    width: 85px
+  &_right
+    display: flex
+    align-items: center
+    gap: 20px
+    &__phone
+      width: 40px
+      height: 34px
+      display: flex
+      align-items: center
+      justify-content: center
+      &:active
+        background: #F6F8FF
+    &__burger
+      width: 40px
+      height: 34px
+      display: flex
+      align-items: center
+      justify-content: center
+      &:active
+        background: #F6F8FF
+      &_img
+        width: 60px
+        height: auto
+
+@media (min-width: 720px)
+  .wrap, .header
+    display: none

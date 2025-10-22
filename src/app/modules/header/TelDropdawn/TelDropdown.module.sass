@@ -1,0 +1,149 @@
+@import "../../../../UI/colors"
+
+.wrap
+  cursor: pointer
+  -webkit-user-select: none
+  user-select: none
+  position: relative
+  z-index: 11
+  height: 37px
+  display: flex
+  &_box
+    display: flex
+    align-items: center
+    gap: 8px
+    &__img
+      margin-right: 4px
+    &__number
+      color: $textColor
+      font-family: 'Montserrat', sans-serif
+      font-size: 16px
+      font-weight: 600
+      line-height: 128%
+    &__arrow
+      width: 16px
+      height: 9px
+
+
+  &_add
+    width:  220px
+    position: absolute
+    opacity: 0
+    bottom: 20px
+    left: 50%
+    transform: translateX(-50%)
+    padding: 15px 5px
+    border-radius: 3px
+    background: #FFF
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    cursor: initial
+    visibility: hidden
+    z-index: 12
+    &__top
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      &_box
+        width: 100%
+        padding:  5px 10px
+        display: flex
+        align-items: flex-start
+        gap: 10px
+        text-decoration: none
+        &:hover
+          background: rgba(0, 0, 0, 0.1)
+          .wrap_add__top_box__wrap_txt
+            color: $titleSpanBlue
+        &__img
+          margin-top: 0
+        &__wrap
+          display: flex
+          flex-direction: column
+          &_txt
+            color: $textColor
+            font-family: 'Montserrat', sans-serif
+            font-size: 14px
+            font-weight: 600
+            line-height: 128%
+          &_time
+            color: $textColor
+            font-family: 'Montserrat', sans-serif
+            font-size: 12px
+            font-style: normal
+            font-weight: 400
+            line-height: 128%
+    &__bottom
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 15px
+      &_txt
+        color: #212121
+        text-align: center
+        font-family: 'Montserrat', sans-serif
+        font-size: 12px
+        font-weight: 400
+        line-height: 128%
+        margin-bottom: 0
+        width: 145px
+        cursor: initial
+      &_imgWrap
+        display: flex
+        align-items: center
+        gap: 30px
+        &__img
+          cursor: pointer
+
+  &_addActive
+    animation: active .5s forwards
+
+
+.backdrop
+  @include backdrop
+
+
+.interacted
+  .wrap_addDisable
+    animation: disable .3s forwards
+  .wrap_box__arrowActive
+    animation: rotate .3s forwards
+  .wrap_box__arrowDisable
+    animation: rotateBack .3s forwards
+
+
+@keyframes active
+  from
+    opacity: 0
+    visibility: hidden
+    transform: translateY(90%) translateX(-50%)
+  to
+    opacity: 1
+    visibility: visible
+    transform: translateY(110%) translateX(-50%)
+
+@keyframes disable
+  from
+    opacity: 1
+    visibility: visible
+    transform: translateY(110%) translateX(-50%)
+  to
+    opacity: 0
+    transform: translateY(90%) translateX(-50%)
+    visibility: hidden
+    display: none
+
+
+@keyframes rotate
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(180deg)
+
+@keyframes rotateBack
+  from
+    transform: rotate(180deg)
+  to
+    transform: rotate(0deg)

@@ -1,0 +1,374 @@
+.companies_img {
+  width: 196px;
+  height: auto;
+  transition: 0.3s ease;
+  margin: 0 auto;
+  transform: translateX(0%);
+}
+.companies_card {
+  display: flex;
+  width: 500px;
+  height: 707px;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 46px 29px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+.companies_card:hover .companies_wrap, .companies_card:hover .companies_title, .companies_card:hover .companies_text {
+  opacity: 1;
+}
+.companies_card:hover .companies_img {
+  width: 115.527px;
+  height: 52px;
+  margin: 0 auto 39px auto;
+  transform: translateX(-150%);
+}
+.companies_card:hover .companies_wrap {
+  opacity: 1;
+}
+.companies_card:hover .companies_wrap__text {
+  color: #4A4A58;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+.companies_card:hover .companies_card_text {
+  display: flex;
+  color: #4A4A58;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.16px;
+}
+.companies_card:hover .companies_wrap {
+  opacity: 1;
+}
+.companies_card:hover .companies_wrap__text {
+  color: #4A4A58;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+.companies_card:hover .companies_title {
+  font-size: 25px;
+  margin: 0;
+  text-align: start;
+}
+.companies_card:hover .companies_text {
+  opacity: 1;
+}
+.companies_card:hover .companies_imageFirst {
+  transform: translateY(10%);
+}
+.companies_card:hover .companies_imageSecond {
+  transform: translateY(10%);
+}
+.companies_title {
+  color: #1F232E;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  margin: 55px auto 0 auto;
+  opacity: 1;
+}
+.companies_text {
+  opacity: 0;
+  color: #4A4A58;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.16px;
+}
+.companies_wrap {
+  opacity: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-top: 10px;
+  align-items: flex-start;
+}
+.companies_wrap__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.companies_imageFirst {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+.companies_imageSecond {
+  width: 100%;
+  height: 279px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 1620px) {
+  .companies_img {
+    width: 117.737px;
+    height: auto;
+  }
+  .companies_card {
+    width: 372px;
+    height: 630px;
+    padding: 32px 29px;
+  }
+  .companies_card:hover .companies_img {
+    width: 117.737px;
+    height: auto;
+    transform: translateX(0);
+    margin: 0 auto 16px auto;
+  }
+  .companies_card:hover .companies_title {
+    font-size: 20px;
+  }
+  .companies_card:hover .companies_imageFirst {
+    transform: translateY(15%);
+  }
+  .companies_card:hover .companies_imageSecond {
+    height: auto;
+    width: 100%;
+    transform: translateY(15%);
+  }
+  .companies_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .companies_wrap_text {
+    font-size: 14px;
+  }
+  .companies_title {
+    font-size: 27px;
+    line-height: 34px;
+  }
+  .companies_text {
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.16px;
+  }
+  .companies_imageFirst {
+    width: 60%;
+  }
+  .companies_imageSecond {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .companies_img {
+    width: 78px;
+    height: auto;
+    margin-left: 0;
+  }
+  .companies_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    opacity: 1;
+  }
+  .companies_wrap__text {
+    color: #4A4A58;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 0 5px;
+  }
+  .companies_card {
+    width: 315px;
+    height: 630px;
+    padding: 26px 20px;
+    transition: 0s ease !important;
+  }
+  .companies_card:hover .companies {
+    border: none;
+  }
+  .companies_card:hover .companies_img {
+    width: 78px;
+    height: 40px;
+    margin: 0;
+  }
+  .companies_card:hover .companies_card {
+    width: 315px;
+    height: 480px;
+    padding: 26px 20px;
+  }
+  .companies_card:hover .companies_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    opacity: 1;
+  }
+  .companies_card:hover .companies_wrap__text {
+    font-size: 14px;
+    opacity: 1;
+    margin: 0 0 0 5px;
+  }
+  .companies_card:hover .companies_title {
+    font-size: 24px;
+    margin: 22px 0 0 0;
+    text-align: start;
+  }
+  .companies_card:hover .companies_text {
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.16px;
+    opacity: 1;
+  }
+  .companies_card:hover .companies_imageFirst {
+    width: 50%;
+    transform: translateX(20%);
+  }
+  .companies_card:hover .companies_imageSecond {
+    width: 80%;
+    height: auto;
+    transform: translateX(0);
+  }
+  .companies_title {
+    font-size: 24px;
+    margin: 22px 0 0 0;
+    text-align: start;
+  }
+  .companies_text {
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.16px;
+    opacity: 1;
+  }
+  .companies_imageFirst {
+    width: 50%;
+    transform: translateX(20%);
+  }
+  .companies_imageSecond {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 720px) {
+  .companies_img {
+    width: 78px;
+    height: auto;
+    margin-left: 0;
+  }
+  .companies_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    opacity: 1;
+  }
+  .companies_wrap__text {
+    color: #4A4A58;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 0 5px;
+  }
+  .companies_card {
+    width: 315px;
+    height: 650px;
+    padding: 26px 20px;
+    transition: 0s ease !important;
+  }
+  .companies_card:hover .companies {
+    border: none;
+  }
+  .companies_card:hover .companies_img {
+    width: 78px;
+    height: 40px;
+    margin: 0;
+  }
+  .companies_card:hover .companies_card {
+    width: 315px;
+    height: 480px;
+    padding: 26px 20px;
+  }
+  .companies_card:hover .companies_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    opacity: 1;
+  }
+  .companies_card:hover .companies_wrap__text {
+    font-size: 14px;
+    opacity: 1;
+    margin: 0 0 0 5px;
+  }
+  .companies_card:hover .companies_title {
+    font-size: 24px;
+    margin: 22px 0 0 0;
+    text-align: start;
+  }
+  .companies_card:hover .companies_text {
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.16px;
+    opacity: 1;
+  }
+  .companies_card:hover .companies_imageFirst {
+    width: 50%;
+    transform: translateX(20%);
+  }
+  .companies_card:hover .companies_imageSecond {
+    width: 100%;
+    height: auto;
+    transform: translateX(0);
+  }
+  .companies_title {
+    font-size: 18px;
+    margin: 22px 0 0 0;
+    text-align: start;
+    line-height: 21px;
+  }
+  .companies_text {
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.16px;
+    opacity: 1;
+  }
+  .companies_imageFirst {
+    width: 50%;
+    transform: translateX(20%);
+  }
+  .companies_imageSecond {
+    width: 80%;
+    height: auto;
+  }
+  .secondImageMob {
+    width: 100%;
+    height: auto;
+  }
+  .thirdImageMob {
+    width: 100%;
+    height: auto;
+    max-height: 175px;
+  }
+}
+
+/*# sourceMappingURL=CompaniesCard.module.css.map */

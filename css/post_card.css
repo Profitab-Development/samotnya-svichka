@@ -1,0 +1,200 @@
+.post_card {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post_card_img_block {
+  position: relative;
+}
+
+.post_card_category_block {
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  display: flex;
+  height: 24.767px;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #FCCB06;
+}
+
+.post_card_category_text {
+  color: #0B062D;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.14px;
+  margin: 0;
+}
+
+.post_card_img {
+  width: 100%;
+  height: auto;
+  max-width: 360px;
+}
+
+.post_card_info_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+  background-color: #FFF;
+}
+
+.post_card_info_title {
+  color: #0B062D;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 128%;
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post_card_date_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.post_card_info_author_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.post_card_date_info_text {
+  overflow: hidden;
+  color: #212529;
+  text-overflow: ellipsis;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128%;
+  margin: 0;
+}
+
+.post_card_info_text {
+  overflow: hidden;
+  color: #212121;
+  text-overflow: ellipsis;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128%;
+  letter-spacing: 0.14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post_card_info_btn_block {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn_link {
+  text-decoration: none;
+}
+
+.post_card_info_btn {
+  display: flex;
+  height: 55px;
+  width: 100%;
+  padding: 15px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-radius: 3px;
+  border: none;
+  background: #D92D20;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: background 0.3s ease;
+}
+.post_card_info_btn:hover {
+  background: #B2251A;
+}
+.post_card_info_btn:active {
+  background: #B2251A;
+}
+
+@media (max-width: 1500px) {
+  .post_card_info_title {
+    color: #0B062D;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+  }
+  .post_card_info_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+  }
+  .post_card {
+    width: 100%;
+    height: auto;
+    max-width: 310px;
+  }
+}
+@media (max-width: 1200px) {
+  .post_card {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+  }
+}
+@media (max-width: 720px) {
+  .post_card {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .post_card_info_title {
+    font-size: 14px;
+  }
+  .post_card_date_info_text {
+    font-size: 10px;
+  }
+  .post_card_info_text {
+    font-size: 12px;
+  }
+  .post_card_info_btn {
+    height: 45px;
+    width: 100%;
+    padding: 15px 12px;
+    font-size: 12px;
+  }
+  .post_card_info_block {
+    padding: 16px;
+  }
+  .post_card_category_text {
+    font-size: 11px;
+  }
+}
+
+/*# sourceMappingURL=post_card.css.map */

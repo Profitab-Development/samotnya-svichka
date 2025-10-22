@@ -1,0 +1,195 @@
+.logos {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.titleContainer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.titleSpan {
+  color: #D92D20;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.buttonContainer {
+  flex-shrink: 0;
+}
+
+.partnerButton {
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 15px 32px;
+  background: #D92D20;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 280px;
+  height: 55px;
+  text-align: center;
+}
+
+.partnerButton:hover {
+  background: #B2251A;
+}
+
+.partnerButton:active {
+  background: #B2251A;
+}
+
+.logosContainer {
+  flex: 1;
+  max-width: 700px;
+}
+
+.logosStatic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.img {
+  width: auto;
+  max-width: 232px;
+  height: 70px;
+  object-fit: contain;
+}
+
+@media (max-width: 1500px) {
+  .logos {
+    padding-bottom: 45px;
+  }
+  
+  .title {
+    font-size: 40px;
+  }
+  
+  .content {
+    gap: 50px;
+  }
+  
+  .logosContainer {
+    max-width: 600px;
+  }
+  
+  .logosStatic {
+    gap: 40px;
+  }
+  
+  .img {
+    height: 60px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    gap: 40px;
+  }
+  
+  .logosContainer {
+    max-width: 500px;
+  }
+  
+  .logosStatic {
+    gap: 30px;
+  }
+  
+  .img {
+    height: 55px;
+    max-width: 190px;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .logosContainer {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .logosStatic {
+    gap: 30px;
+  }
+  
+  .img {
+    height: 50px;
+    max-width: 200px;
+  }
+  
+  .partnerButton {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 720px) {
+  .logos {
+    padding-top: 26px;
+    padding-bottom: 40px;
+  }
+  
+  .title {
+    font-size: 30px;
+  }
+  
+  .titleContainer {
+    margin-bottom: 30px;
+  }
+  
+  .logosStatic {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .img {
+    height: 40px;
+    max-width: 150px;
+  }
+  
+  .partnerButton {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 15px 32px;
+    font-size: 14px;
+  }
+  
+  .logosContainer {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Logo.module.css.map */

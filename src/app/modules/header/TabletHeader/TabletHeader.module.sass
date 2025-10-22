@@ -1,0 +1,82 @@
+@import "../../../../UI/colors"
+.dropdown
+  position: absolute
+  background: white
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
+  border-radius: 8px
+  overflow: hidden
+  min-width: 150px
+  display: flex
+  flex-direction: column
+  z-index: 99
+.arrow_active
+  transform: rotate(180deg)
+  transition: transform 0.3s ease-in-out
+.dropdown_item
+  padding: 10px 15px
+  color: black
+  text-decoration: none
+  transition: background 0.3s
+.dropdown_item:hover
+  background: #f1f1f1
+  color: $titleSpanBlue
+.wrap
+  height: 64px
+  background: #FFF
+  display: flex
+  align-items: center
+  position: relative
+  width: 100%
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 76px
+  user-select: none
+  &_logo
+    width: 92.343px
+    height: 32px
+  &_links
+    display: flex
+    align-items: center
+    gap: 20px
+    &__link
+      color: $textColor
+      font-family: 'Montserrat', sans-serif
+      font-size: 14px
+      font-weight: 500
+      text-decoration: none
+      cursor: pointer
+      position: relative
+      height: 37px
+      align-items: center
+      &_active
+        &::before
+          content: ''
+          width: 100%
+          height: 2px
+          border-radius: 6px
+          background: $darkBlue
+          position: absolute
+          bottom: -3px
+          left: 50%
+          transform: translateX(-50%)
+  &_right
+    border-radius: 3px
+    background: #F6F8FF
+    padding: 10px
+    cursor: pointer
+    &:active
+      background: #e8eeff
+    &:focus
+      background: #cedbff
+    &__img
+      width: 20px
+      height: 12px
+
+
+@media (max-width: 721px), (min-width: 1180px)
+  .wrap
+    display: none
+  .header
+    display: none
