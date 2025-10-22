@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { PhoneNumberUtil } from 'google-libphonenumber'
 import { PhoneInput } from 'react-international-phone'
@@ -50,7 +50,7 @@ const socialsData = [
 ]
 
 const MobBurgerMenu: React.FC = () => {
-  const t = useTranslations('header')
+  const { t } = useStaticTranslations()
   const router = useRouter()
   const show = MobBurgerMenuStore((state) => state.show)
   const handleClose = MobBurgerMenuStore((state) => state.handleClose)
@@ -207,13 +207,13 @@ const MobBurgerMenu: React.FC = () => {
             <ContactItem
               icon={MobMailIcon}
               text={eMail}
-              subText={t('telDropdown.mailSubText')}
+              subText={t('header.telDropdown.mailSubText')}
               link={`mailto:${eMail}`}
             />
             <ContactItem
               icon={MobTelIcon}
               text={mobTel}
-              subText={t('telDropdown.telSubText')}
+              subText={t('header.telDropdown.telSubText')}
               link={`tel:${mobTel}`}
             />
           </div>

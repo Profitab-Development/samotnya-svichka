@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Image, { StaticImageData } from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import style from './TelDropdown.module.css'
 
 import {
@@ -34,7 +34,7 @@ const socialsData: SocialData[] = [
 ]
 
 const TelDropdown: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   const [isActive, setIsActive] = useState<boolean>(false)
   const [hasInteracted, setHasInteracted] = useState<boolean>(false)
 

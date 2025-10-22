@@ -11,7 +11,7 @@ const Geography: React.FC = () => {
       <div className="customContainer">
         <p className="geography_title">
           Географія БО{' '}
-          <span className="geography_title_span">"Самотня свічка"</span>
+          <span className="geography_title_span">&quot;Самотня свічка&quot;</span>
         </p>
         <div className="geography_content">
           <div className="geography_left">

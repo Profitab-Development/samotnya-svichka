@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Marquee from 'react-fast-marquee'
 import { Logo1, Logo2 } from '@/assets/Images/Logos/Index'
 import Image from 'next/image'
 import { popUpStore } from '@/app/modules/MainPopUp/popUpStore'
@@ -8,7 +7,6 @@ import styles from './Logo.module.css'
 
 const Logo = () => {
   const handleShow = popUpStore((state) => state.handleShow)
-  const customCreatives = [Logo1, Logo2, Logo1, Logo2]
 
   return (
     <div className={styles.logos}>

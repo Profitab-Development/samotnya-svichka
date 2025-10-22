@@ -2,7 +2,7 @@
 // import React, { useRef, useState } from 'react'
 // import { useForm, SubmitHandler } from 'react-hook-form'
 // import { useRouter } from 'next/navigation'
-// import { useTranslations } from 'next-intl'
+// import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 // import { PhoneNumberUtil } from 'google-libphonenumber'
 // import { toast, ToastContainer } from 'react-toastify'
 // import { PhoneInput } from 'react-international-phone'
@@ -19,7 +19,7 @@
 // }
 //
 // const HeaderForm: React.FC = () => {
-//   const t = useTranslations()
+//   const { t } = useStaticTranslations()
 //   const router = useRouter()
 //   // eslint-disable-next-line
 //   const show = headerFormStore((state: any) => state.show)
@@ -158,7 +158,7 @@ import type React from 'react'
 import { useRef, useState } from 'react'
 import { useForm, type SubmitHandler } from 'react-hook-form'
 import { useRouter } from 'next/navigation'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import { PhoneNumberUtil } from 'google-libphonenumber'
 import { toast, ToastContainer } from 'react-toastify'
 import { PhoneInput } from 'react-international-phone'
@@ -197,7 +197,7 @@ interface FormData {
 }
 
 const HeaderForm: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   const router = useRouter()
   // eslint-disable-next-line
   const show = headerFormStore((state: any) => state.show)

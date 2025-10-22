@@ -1,6 +1,6 @@
 // // import React from 'react'
 // // import Image, { StaticImageData } from 'next/image'
-// // import { useTranslations } from 'next-intl'
+// // import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 // // import './ServiceCard.scss'
 // //
 // // interface ServiceCardProps {
@@ -14,7 +14,7 @@
 // // }
 // //
 // // const ServiceCard: React.FC<ServiceCardProps> = ({ info }) => {
-// //   const t = useTranslations()
+// //   const { t } = useStaticTranslations()
 // //
 // //   return (
 // //     <div className="serviceCard">
@@ -57,7 +57,7 @@
 //
 // import React from 'react'
 // import Image, { StaticImageData } from 'next/image'
-// import { useTranslations } from 'next-intl'
+// import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 // import { popUpStore } from '@/app/modules/MainPopUp/popUpStore'
 // import './ServiceCard.scss'
 //
@@ -71,7 +71,7 @@
 // }
 //
 // const ServiceCard: React.FC<ServiceCardProps> = ({ info }) => {
-//   const t = useTranslations()
+//   const { t } = useStaticTranslations()
 //   const handleShow = popUpStore((state) => state.handleShow)
 //
 //   return (
@@ -110,7 +110,7 @@
 
 // import React from 'react'
 // import Image, { StaticImageData } from 'next/image'
-// import { useTranslations } from 'next-intl'
+// import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 // import './ServiceCard.scss'
 //
 // interface ServiceCardProps {
@@ -124,7 +124,7 @@
 // }
 //
 // const ServiceCard: React.FC<ServiceCardProps> = ({ info }) => {
-//   const t = useTranslations()
+//   const { t } = useStaticTranslations()
 //
 //   return (
 //     <div className="serviceCard">
@@ -167,7 +167,7 @@
 
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import { popUpStore } from '@/app/modules/MainPopUp/popUpStore'
 import './ServiceCard.scss'
 
@@ -182,7 +182,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ info }) => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
 
   const handleClick = () => {
     if (info.fn) {

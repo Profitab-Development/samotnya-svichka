@@ -11,11 +11,11 @@ import {
   // tiktokLink,
 } from '@/constants'
 import { Link } from 'react-scroll'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import Image, { StaticImageData } from 'next/image'
 
 const Footer: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
 
   const date = new Date().getFullYear()
 
@@ -97,7 +97,7 @@ const SocialMediaIcon: React.FC<{
 }
 
 const AddressSection: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   return (
     <div className={style.wrap_address}>
       <div className={style.wrap_address__item}>
@@ -115,7 +115,7 @@ const AddressSection: React.FC = () => {
 }
 
 const OffertaSection: React.FC<{ date: number }> = ({}) => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   return (
     <div className={style.wrap_offerta}>
       © 2025 Усі права захищені
@@ -127,7 +127,7 @@ const OffertaSection: React.FC<{ date: number }> = ({}) => {
 }
 
 const ContactSection: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   return (
     <div className={style.wrap_contacts}>
       <div className={style.wrap_contacts__txt}>{t('footer.contacts')}</div>
@@ -142,7 +142,7 @@ const ContactSection: React.FC = () => {
 }
 
 const ScrollToTop: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   return (
     <Link to="header" smooth duration={500} className={style.wrap_scroll}>
       <div className={style.wrap_scroll__txt}>{t('footer.scroll')}</div>

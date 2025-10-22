@@ -1,7 +1,7 @@
 // 'use client'
 //
 // import React, { useEffect, useState } from 'react'
-// import { useTranslations } from 'next-intl'
+// import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 // import Link from 'next/link'
 // import { usePathname } from 'next/navigation'
 // import Image from 'next/image'
@@ -21,7 +21,7 @@
 // import { header_tablet_burger, znaesh_logo } from '@/assets/Icons'
 //
 // const TabletHeader: React.FC = () => {
-//   const t = useTranslations('')
+//   const { t } = useStaticTranslations()
 //   const pathname = usePathname()
 //
 //   const [activeNavLink, setActiveNavLink] = useState<string>('')
@@ -127,7 +127,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
@@ -143,7 +143,7 @@ interface LinkItem {
 }
 
 const TabletHeader: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   const pathname = usePathname()
 
   const [activeNavLink, setActiveNavLink] = useState<string>('')

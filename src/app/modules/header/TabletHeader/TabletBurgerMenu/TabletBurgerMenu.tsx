@@ -2,14 +2,14 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import { TabletBurgerMenuStore } from './TabletBurgerMenuStore'
 import style from './TabletBurgerMenu.module.css'
 import { tg_white, MobTelIcon } from '@/assets/Icons'
 // import LanguagesChanger from '@/app/modules/header/LanguagesChanger/LanguagesChanger'
 
 const TabletBurgerMenu: React.FC = () => {
-  const t = useTranslations('header')
+  const { t } = useStaticTranslations()
   const show = TabletBurgerMenuStore((state) => state.show)
   const handleClose = TabletBurgerMenuStore((state) => state.handleClose)
 

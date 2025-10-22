@@ -3,12 +3,12 @@ import React from 'react'
 import style from './PricesInstagram.module.css'
 import classNames from 'classnames'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import { prices_arrow } from '@/assets/Images/Prices/Index'
 import { facebookLink, telegramLink } from '@/constants'
 
 const Prices: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
 
   return (
     <div className={style.bg} id={'assoc'}>

@@ -3,7 +3,7 @@
 // import { usePathname } from 'next/navigation'
 // import Link from 'next/link'
 // import Image from 'next/image'
-// import { useTranslations } from 'next-intl'
+// import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 // import style from './WebHeader.module.css'
 // import { TelDropdown } from '../TelDropdawn/TelDropdown'
 // import { HeaderForm } from '../HeaderForm/HeaderForm'
@@ -17,7 +17,7 @@
 // }
 //
 // const WebHeader: React.FC = () => {
-//   const t = useTranslations()
+//   const { t } = useStaticTranslations()
 //   const pathname = usePathname()
 //
 //   const [activeNavLink, setActiveNavLink] = useState<string>('')
@@ -147,7 +147,7 @@
 // import { usePathname } from 'next/navigation'
 // import Link from 'next/link'
 // import Image from 'next/image'
-// import { useTranslations } from 'next-intl'
+// import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 // import style from './WebHeader.module.css'
 // import { TelDropdown } from '../TelDropdawn/TelDropdown'
 // import { HeaderForm } from '../HeaderForm/HeaderForm'
@@ -160,7 +160,7 @@
 // }
 //
 // const WebHeader: React.FC = () => {
-//   const t = useTranslations()
+//   const { t } = useStaticTranslations()
 //   const pathname = usePathname()
 //
 //   const [activeNavLink, setActiveNavLink] = useState<string>('')
@@ -235,7 +235,7 @@ import React, { useEffect, useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useStaticTranslations } from '@/hooks/useStaticTranslations'
 import style from './WebHeader.module.css'
 import { HeaderForm } from '../HeaderForm/HeaderForm'
 import { backCall, logo_svichka } from '@/assets/Icons'
@@ -246,7 +246,7 @@ interface LinkItem {
 }
 
 const WebHeader: React.FC = () => {
-  const t = useTranslations()
+  const { t } = useStaticTranslations()
   const pathname = usePathname()
   const router = useRouter()
 
