@@ -1,33 +1,33 @@
 'use client'
 
-import React, { useRef, useState } from 'react'
-import Image, { StaticImageData } from 'next/image'
+import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { useStaticTranslations } from '@/hooks/useStaticTranslations'
-import { useForm, SubmitHandler } from 'react-hook-form'
-import { PhoneNumberUtil } from 'google-libphonenumber'
-import { PhoneInput } from 'react-international-phone'
-import { toast } from 'react-toastify'
+// import { useRouter } from 'next/navigation'
+// import { useStaticTranslations } from '@/hooks/useStaticTranslations'
+// import { useForm, SubmitHandler } from 'react-hook-form'
+// import { PhoneNumberUtil } from 'google-libphonenumber'
+// import { PhoneInput } from 'react-international-phone'
+// import { toast } from 'react-toastify'
 import { MobBurgerMenuStore } from './MobBurgerMenuStore'
 import style from './MobBurgerMenu.module.css'
-import 'react-international-phone/style.css'
+// import 'react-international-phone/style.css'
 
-import {
-  sendInTg,
-  THANK_ROUTE,
-} from '@/constants'
+// import {
+//   sendInTg,
+//   THANK_ROUTE,
+// } from '@/constants'
 import {
   mobMenuCloseBtn,
-  MobTelIcon,
+  // MobTelIcon,
   logo_svichka,
 } from '@/assets/Icons/Header/header'
-import { Toastify } from '@/app/components/Toastify/Toastify'
-import { DotIcon } from '@/app/components/DotIcon/DotIcon'
+// import { Toastify } from '@/app/components/Toastify/Toastify'
+// import { DotIcon } from '@/app/components/DotIcon/DotIcon'
 
-interface FormData {
-  name: string
-}
+// interface FormData {
+//   name: string
+// }
 
 // const socialsData = [
 //   // { normal: MobInstS, hover: MobInstH, link: instagramLink },
@@ -37,76 +37,77 @@ interface FormData {
 // ]
 
 const MobBurgerMenu: React.FC = () => {
-  const { t } = useStaticTranslations()
-  const router = useRouter()
+  // const { t } = useStaticTranslations()
+  // const router = useRouter()
   const show = MobBurgerMenuStore((state) => state.show)
+  const isClosing = MobBurgerMenuStore((state) => state.isClosing)
   const handleClose = MobBurgerMenuStore((state) => state.handleClose)
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors, touchedFields },
-  } = useForm<FormData>({ mode: 'all' })
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   reset,
+  //   formState: { errors, touchedFields },
+  // } = useForm<FormData>({ mode: 'all' })
 
-  const [phone, setPhone] = useState('')
-  const [isBlurredPhone, setIsBlurredPhone] = useState(false)
-  const toastId = useRef<string | number | null>(null)
+  // const [phone, setPhone] = useState('')
+  // const [isBlurredPhone, setIsBlurredPhone] = useState(false)
+  // const toastId = useRef<string | number | null>(null)
 
-  const isPhoneValid = (phone: string): boolean => {
-    const phoneUtil = PhoneNumberUtil.getInstance()
-    try {
-      return phoneUtil.isValidNumber(phoneUtil.parseAndKeepRawInput(phone))
-    } catch {
-      return false
-    }
-  }
+  // const isPhoneValid = (phone: string): boolean => {
+  //   const phoneUtil = PhoneNumberUtil.getInstance()
+  //   try {
+  //     return phoneUtil.isValidNumber(phoneUtil.parseAndKeepRawInput(phone))
+  //   } catch {
+  //     return false
+  //   }
+  // }
 
-  const isValid = isPhoneValid(phone)
+  // const isValid = isPhoneValid(phone)
 
-  const onSubmit: SubmitHandler<FormData> = async ({ name }) => {
-    if (!isValid) {
-      setIsBlurredPhone(true)
-      return
-    }
+  // const onSubmit: SubmitHandler<FormData> = async ({ name }) => {
+  //   if (!isValid) {
+  //     setIsBlurredPhone(true)
+  //     return
+  //   }
 
-    if (toastId.current) {
-      toast.dismiss(toastId.current)
-    }
+  //   if (toastId.current) {
+  //     toast.dismiss(toastId.current)
+  //   }
 
-    toastId.current = toast(<Toastify type="pending" />, {
-      autoClose: 3000,
-      hideProgressBar: true,
-    })
+  //   toastId.current = toast(<Toastify type="pending" />, {
+  //     autoClose: 3000,
+  //     hideProgressBar: true,
+  //   })
 
-    const msg = `Заявка на консультацію:\nName - ${name}\nPhone - ${phone}`
-    const resp = await sendInTg(msg)
+  //   const msg = `Заявка на консультацію:\nName - ${name}\nPhone - ${phone}`
+  //   const resp = await sendInTg(msg)
 
-    if (resp.ok) {
-      reset()
-      setPhone('')
-      setIsBlurredPhone(false)
-      handleClose()
-      router.push(THANK_ROUTE)
-    } else {
-      toast.update(toastId.current, {
-        render: t('toastify.warning.title'),
-        type: 'error',
-        autoClose: 7000,
-      })
-    }
-  }
+  //   if (resp.ok) {
+  //     reset()
+  //     setPhone('')
+  //     setIsBlurredPhone(false)
+  //     handleClose()
+  //     router.push(THANK_ROUTE)
+  //   } else {
+  //     toast.update(toastId.current, {
+  //       render: t('toastify.warning.title'),
+  //       type: 'error',
+  //       autoClose: 7000,
+  //     })
+  //   }
+  // }
 
-  const inputStyle = (error: boolean, touched: boolean) => {
-    if (error && touched)
-      return { boxShadow: 'inset 0px 0px 5px 5px rgba(255,0,0,.1)' }
-    if (!error && touched)
-      return { boxShadow: 'inset 0px 0px 5px 5px rgba(100,255,100,.1)' }
-    return {}
-  }
+  // const inputStyle = (error: boolean, touched: boolean) => {
+  //   if (error && touched)
+  //     return { boxShadow: 'inset 0px 0px 5px 5px rgba(255,0,0,.1)' }
+  //   if (!error && touched)
+  //     return { boxShadow: 'inset 0px 0px 5px 5px rgba(100,255,100,.1)' }
+  //   return {}
+  // }
 
   return (
-    <div className={`${style.wrap} ${show ? style.wrap_active : ''}`}>
+    <div className={`${style.wrap} ${show ? style.wrap_active : ''} ${isClosing ? style.wrap_closing : ''}`}>
       <div className={`customContainer ${style.header}`}>
         <div className={style.header_top}>
           <Link href="/">
@@ -175,7 +176,15 @@ const MobBurgerMenu: React.FC = () => {
               Контакти
             </a>
           </nav>
-          <form
+          
+          <div className={style.header_center__phone}>
+            <a href="tel:+380956989072" className={style.header_center__phone_link}>
+              +380 95 698 90 72
+            </a>
+            <p className={style.header_center__phone_note}>Цілодобово</p>
+          </div>
+          
+          {/* <form
             className={style.header_center__form}
             onSubmit={handleSubmit(onSubmit)}
           >
@@ -229,47 +238,47 @@ const MobBurgerMenu: React.FC = () => {
                 </p>
               </div>
             </div>
-          </form>
-          <div className={style.header_center__links}>
+          </form> */}
+          {/* <div className={style.header_center__links}>
             <ContactItem
               icon={MobTelIcon}
               text="+38 055 555 55 55"
               subText="Зворотний дзвінок"
               link="tel:+380555555555"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
   )
 }
 
-interface ContactItemProps {
-  icon: string | StaticImageData
-  text: string
-  subText: string
-  link: string
-}
+// interface ContactItemProps {
+//   icon: string | StaticImageData
+//   text: string
+//   subText: string
+//   link: string
+// }
 
-const ContactItem: React.FC<ContactItemProps> = ({
-  icon,
-  text,
-  subText,
-  link,
-}) => (
-  <a href={link} className={style.header_center__links_box}>
-    <Image
-      src={icon}
-      alt="contact-icon"
-      className={style.header_center__links_box__img}
-      width={24}
-      height={24}
-    />
-    <div className={style.header_center__links_box__wrap}>
-      <div className={style.header_center__links_box__wrap_txt}>{text}</div>
-      <div className={style.header_center__links_box__wrap_time}>{subText}</div>
-    </div>
-  </a>
-)
+// const ContactItem: React.FC<ContactItemProps> = ({
+//   icon,
+//   text,
+//   subText,
+//   link,
+// }) => (
+//   <a href={link} className={style.header_center__links_box}>
+//     <Image
+//       src={icon}
+//       alt="contact-icon"
+//       className={style.header_center__links_box__img}
+//       width={24}
+//       height={24}
+//     />
+//     <div className={style.header_center__links_box__wrap}>
+//       <div className={style.header_center__links_box__wrap_txt}>{text}</div>
+//       <div className={style.header_center__links_box__wrap_time}>{subText}</div>
+//     </div>
+//   </a>
+// )
 
 export { MobBurgerMenu }

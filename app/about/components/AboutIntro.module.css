@@ -1,6 +1,6 @@
 .intro {
   background: var(--creamy-white, #FAF3E0);
-  padding: 100px 0;
+  padding: 80px 0;
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -123,14 +123,23 @@
 
 @media (max-width: 720px) {
   .intro {
-    padding: 80px 0;
+    padding: 60px 20px;
     min-height: 70vh;
+  }
+  
+  .intro_container {
+    padding: 0 10px;
+  }
+  
+  .intro_content {
+    gap: 40px;
   }
   
   .intro_paragraph {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 25px;
+    text-align: left;
   }
   
   .donate_button {
@@ -146,11 +155,21 @@
 
 @media (max-width: 480px) {
   .intro {
-    padding: 60px 0;
+    padding: 40px 15px;
+  }
+  
+  .intro_container {
+    padding: 0 5px;
   }
   
   .intro_content {
-    gap: 40px;
+    gap: 30px;
+  }
+  
+  .intro_paragraph {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
   
   .donate_button {

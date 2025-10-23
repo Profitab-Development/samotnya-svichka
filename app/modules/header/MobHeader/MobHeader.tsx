@@ -27,11 +27,11 @@ const MobHeader: React.FC = () => {
         </Link>
 
         <div className={style.header_right}>
-          <div className={style.header_right__phone}>
+          {/* <div className={style.header_right__phone}>
             <a href="tel:+380956989072" className={style.header_right__phone_link}>
               +380 95 698 90 72
             </a>
-          </div>
+          </div> */}
           <div className={style.header_right__btns}>
             <a 
               href="https://send.monobank.ua/jar/qbu3WGhLU" 

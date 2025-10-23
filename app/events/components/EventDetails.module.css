@@ -101,7 +101,8 @@
 }
 
 .register_button:hover {
-  background: var(--deep-bordeaux-red-hover, #6B252C);
+  background: #FFD97D;
+  color: var(--text-primary, #0B062D);
 }
 
 .register_button:active {
@@ -136,7 +137,15 @@
 
 @media (max-width: 720px) {
   .details {
-    padding: 60px 0;
+    padding: 60px 20px;
+  }
+  
+  .details_container {
+    padding: 0 10px;
+  }
+  
+  .details_content {
+    gap: 30px;
   }
   
   .event_info {
@@ -146,6 +155,7 @@
   .details_paragraph {
     font-size: 15px;
     line-height: 1.6;
+    text-align: left;
   }
   
   .event_info_title {
@@ -165,7 +175,15 @@
 
 @media (max-width: 480px) {
   .details {
-    padding: 40px 0;
+    padding: 40px 15px;
+  }
+  
+  .details_container {
+    padding: 0 5px;
+  }
+  
+  .details_content {
+    gap: 25px;
   }
   
   .event_info {
@@ -174,6 +192,7 @@
   
   .details_paragraph {
     font-size: 14px;
+    text-align: left;
   }
   
   .event_info_title {

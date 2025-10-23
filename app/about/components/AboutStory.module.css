@@ -70,7 +70,11 @@
 
 @media (max-width: 720px) {
   .story {
-    padding: 60px 0;
+    padding: 60px 20px;
+  }
+  
+  .story_container {
+    padding: 0 10px;
   }
   
   .story_content {
@@ -81,6 +85,7 @@
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 25px;
+    text-align: left;
   }
   
   .story_img {
@@ -90,7 +95,11 @@
 
 @media (max-width: 480px) {
   .story {
-    padding: 40px 0;
+    padding: 40px 15px;
+  }
+  
+  .story_container {
+    padding: 0 5px;
   }
   
   .story_content {
@@ -100,6 +109,7 @@
   .story_paragraph {
     font-size: 15px;
     margin-bottom: 20px;
+    text-align: left;
   }
   
   .story_img {

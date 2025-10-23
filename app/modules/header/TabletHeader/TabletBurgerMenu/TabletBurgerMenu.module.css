@@ -142,11 +142,12 @@
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .wrap_right__form_btns__btn:hover {
-  background: var(--deep-bordeaux-red-hover, #6B252C);
+  background: #FFD97D;
+  color: var(--text-primary, #0B062D);
 }
 .wrap_right__dropdowns {
   display: flex;

@@ -120,9 +120,13 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .care {
-    padding: 60px 0;
+    padding: 60px 20px;
+  }
+  
+  .care_container {
+    padding: 0 10px;
   }
   
   .care_grid {
