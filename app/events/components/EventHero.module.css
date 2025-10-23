@@ -105,15 +105,25 @@
 
 @media (max-width: 720px) {
   .hero {
-    padding: 60px 0;
+    padding: 60px 20px;
+  }
+  
+  .hero_container {
+    padding: 0 10px;
+  }
+  
+  .hero_content {
+    gap: 30px;
   }
   
   .hero_title {
     font-size: 28px;
+    text-align: left;
   }
   
   .hero_subtitle {
     font-size: 18px;
+    text-align: left;
   }
   
   .hero_image {
@@ -123,20 +133,31 @@
   .hero_paragraph {
     font-size: 14px;
     line-height: 1.6;
+    text-align: left;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    padding: 40px 0;
+    padding: 40px 15px;
+  }
+  
+  .hero_container {
+    padding: 0 5px;
+  }
+  
+  .hero_content {
+    gap: 25px;
   }
   
   .hero_title {
     font-size: 24px;
+    text-align: left;
   }
   
   .hero_subtitle {
     font-size: 16px;
+    text-align: left;
   }
   
   .hero_image {
@@ -145,5 +166,6 @@
   
   .hero_paragraph {
     font-size: 13px;
+    text-align: left;
   }
 }

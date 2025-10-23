@@ -44,6 +44,7 @@
   margin: 0;
 }
 
+
 .donation_details {
   display: flex;
   flex-direction: column;
@@ -56,6 +57,79 @@
   line-height: 1.5;
   color: var(--text-primary, #0B062D);
   margin: 0;
+}
+
+.copyable_field {
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 2px dashed rgba(123, 44, 53, 0.3);
+  position: relative;
+  background-color: rgba(123, 44, 53, 0.02);
+  margin: 4px 0;
+}
+
+.copyable_field::before {
+  content: "📋";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.copyable_field::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  font-size: 11px;
+  color: var(--deep-bordeaux-red, #7B2C35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.copyable_field:hover {
+  background-color: rgba(123, 44, 53, 0.08);
+  border-color: rgba(123, 44, 53, 0.6);
+  border-style: solid;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(123, 44, 53, 0.15);
+}
+
+.copyable_field:hover::before {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.copyable_field:hover::after {
+  opacity: 1;
+}
+
+.copyable_field:active {
+  background-color: rgba(123, 44, 53, 0.12);
+  transform: translateY(0);
+  border-color: var(--deep-bordeaux-red, #7B2C35);
+}
+
+.copied_indicator {
+  color: #22c55e;
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 8px;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .donation_details strong {
@@ -85,7 +159,8 @@
 }
 
 .donate_button:hover {
-  background: var(--deep-bordeaux-red-hover, #6B252C);
+  background: #FFD97D;
+  color: var(--text-primary, #0B062D);
 }
 
 .donate_button:active {
@@ -152,25 +227,58 @@
 
 @media (max-width: 720px) {
   .project {
-    padding: 60px 0;
+    padding: 60px 20px;
+  }
+  
+  .project_container {
+    padding: 0 10px;
+  }
+  
+  .project_content {
+    gap: 30px;
   }
   
   .project_title {
     font-size: 28px;
+    text-align: center;
   }
   
   .donation_title {
     font-size: 16px;
+    text-align: left;
   }
+  
   
   .donation_details p {
     font-size: 14px;
+    text-align: left;
+  }
+  
+  .copyable_field {
+    padding: 10px 14px;
+    font-size: 14px;
+    margin: 6px 0;
+  }
+  
+  .copyable_field::before {
+    right: 10px;
+    font-size: 14px;
+  }
+  
+  .copyable_field::after {
+    font-size: 10px;
+    bottom: -22px;
+  }
+  
+  .copied_indicator {
+    font-size: 10px;
   }
   
   .donate_button {
     width: 160px;
     height: 33px;
     font-size: 12px;
+    align-self: flex-start;
   }
   
   .project_image {
@@ -180,25 +288,58 @@
 
 @media (max-width: 480px) {
   .project {
-    padding: 40px 0;
+    padding: 40px 15px;
+  }
+  
+  .project_container {
+    padding: 0 5px;
+  }
+  
+  .project_content {
+    gap: 25px;
   }
   
   .project_title {
     font-size: 24px;
+    text-align: center;
   }
   
   .donation_title {
     font-size: 14px;
+    text-align: left;
   }
+  
   
   .donation_details p {
     font-size: 13px;
+    text-align: left;
+  }
+  
+  .copyable_field {
+    padding: 8px 12px;
+    font-size: 13px;
+    margin: 5px 0;
+  }
+  
+  .copyable_field::before {
+    right: 8px;
+    font-size: 12px;
+  }
+  
+  .copyable_field::after {
+    font-size: 9px;
+    bottom: -20px;
+  }
+  
+  .copied_indicator {
+    font-size: 9px;
   }
   
   .donate_button {
     width: 140px;
     height: 30px;
     font-size: 11px;
+    align-self: flex-start;
   }
   
   .project_image {

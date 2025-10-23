@@ -31,6 +31,7 @@
   color: var(--text-primary, #0B062D);
   margin: 0;
   line-height: 1.2;
+  text-align: center;
 }
 
 .hero_right {
@@ -42,22 +43,33 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 .contact_row {
   display: flex;
-  gap: 30px;
+  gap: 15px;
+  width: 100%;
+}
+
+.contact_row .contact_item:first-child {
+  flex: 1;
+}
+
+.contact_row .contact_item:last-child {
+  flex: 1;
 }
 
 .contact_item {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
+  gap: 20px;
   padding: 20px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 .contact_item:hover {
@@ -75,6 +87,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  padding: 8px;
 }
 
 .contact_content {
@@ -83,7 +96,7 @@
 
 .contact_label {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--wood-brown, #A67C52);
   margin: 0 0 8px 0;
@@ -93,7 +106,7 @@
 
 .contact_value {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--text-primary, #0B062D);
   text-decoration: none;
@@ -107,7 +120,7 @@
 
 .contact_note {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   color: var(--wood-brown, #A67C52);
   margin: 8px 0 0 0;
@@ -130,7 +143,11 @@
 
 @media (max-width: 1024px) {
   .hero {
-    padding: 60px 0;
+    padding: 60px 20px;
+  }
+  
+  .hero_container {
+    padding: 0 10px;
   }
   
   .hero_content {
@@ -145,7 +162,7 @@
   
   .hero_right {
     position: static;
-    order: -1;
+    order: 1;
   }
   
   .contact_row {
@@ -155,26 +172,55 @@
   
   .contact_item {
     padding: 18px;
+    gap: 18px;
   }
 }
 
 @media (max-width: 720px) {
   .hero {
-    padding: 40px 0;
+    padding: 60px 20px;
+  }
+  
+  .hero_container {
+    padding: 0 10px;
+  }
+  
+  .hero_content {
+    gap: 30px;
   }
   
   .hero_title {
     font-size: 32px;
+    text-align: center;
+  }
+  
+  .contact_info {
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .contact_row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact_row .contact_item:first-child,
+  .contact_row .contact_item:last-child {
+    flex: 1;
   }
   
   .contact_item {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
     padding: 16px;
+    gap: 18px;
   }
   
   .contact_icon {
-    align-self: center;
+    align-self: flex-start;
+    width: 35px;
+    height: 35px;
+    padding: 6px;
   }
   
   .contact_value {
@@ -191,17 +237,48 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding: 40px 15px;
+  }
+  
+  .hero_container {
+    padding: 0 5px;
+  }
+  
+  .hero_content {
+    gap: 25px;
+  }
+  
   .hero_title {
     font-size: 28px;
+    text-align: center;
+  }
+  
+  .contact_info {
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .contact_row {
+    gap: 15px;
+  }
+  
+  .contact_row .contact_item:first-child,
+  .contact_row .contact_item:last-child {
+    flex: 1;
   }
   
   .contact_item {
     padding: 12px;
+    flex-direction: row;
+    text-align: left;
+    gap: 15px;
   }
   
   .contact_icon {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+    align-self: flex-start;
   }
   
   .contact_label {

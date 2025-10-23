@@ -175,9 +175,11 @@
   box-sizing: border-box;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 .header_right__btns_btn:hover {
-  background: var(--deep-bordeaux-red-hover, #6B252C);
+  background: #FFD97D;
+  color: var(--text-primary, #0B062D);
 }
 .header_right__btns_btn:active {
   background: var(--deep-bordeaux-red-active, #5B1E23);

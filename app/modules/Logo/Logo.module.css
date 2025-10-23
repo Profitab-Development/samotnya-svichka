@@ -57,7 +57,8 @@
 }
 
 .partnerButton:hover {
-  background: var(--deep-bordeaux-red-hover, #6B252C);
+  background: #FFD97D;
+  color: var(--text-primary, #0B062D);
 }
 
 .partnerButton:active {
@@ -163,9 +164,12 @@
   }
   
   .logosStatic {
-    gap: 8px;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    padding: 15px 0;
   }
   
   .img {
@@ -200,19 +204,22 @@
   }
   
   .logosStatic {
-    gap: 6px;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 0;
   }
   
   .img {
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
     object-fit: contain;
-    max-width: 100px;
-    max-height: 50px;
-    min-width: 100px;
-    min-height: 50px;
+    max-width: 120px;
+    max-height: 60px;
+    min-width: 120px;
+    min-height: 60px;
   }
 
   

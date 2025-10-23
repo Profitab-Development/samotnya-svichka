@@ -114,10 +114,11 @@
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 .box_main__btn:hover {
-  background: var(--deep-bordeaux-red-hover, #6B252C);
+  background: #FFD97D;
+  color: var(--text-primary, #0B062D);
 }
 .box_main__btn:active {
   background: var(--deep-bordeaux-red-active, #5B1E23);
@@ -279,6 +280,8 @@
     z-index: 0;
     padding-top: 30px;
     height: 70vh;
+    display: flex;
+    flex-direction: column;
   }
   .wrap_img {
     position: absolute;
@@ -292,10 +295,18 @@
     padding-top: 30px;
     padding-bottom: 30px;
     gap: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .box_main {
     width: 100%;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
   }
   .box_main__top {
     margin-bottom: 20px;
@@ -319,7 +330,11 @@
     letter-spacing: -0.1px;
   }
   .box_main__center {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .box_main__center_img {
     bottom: 0;
@@ -329,28 +344,41 @@
     display: none;
   }
   .box_main__center_title {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
     width: 100%;
-    margin-bottom: 250px;
-    text-align: center;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
   }
   .box_main__center_subtitle {
-    font-size: 14px;
-    letter-spacing: -0.14px;
+    font-size: 16px;
+    letter-spacing: -0.16px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     padding-right: 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    line-height: 1.4;
+    margin-bottom: 0;
   }
   .box_main__btn {
     width: 100%;
     height: auto;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
   }
   .block_btn {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 0;
+    margin-top: auto;
   }
 }
 
