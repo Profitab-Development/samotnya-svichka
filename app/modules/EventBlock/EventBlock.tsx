@@ -5,11 +5,8 @@ import style from './EventBlock.module.css'
 // import { BtnArrow } from '@/assets/Images/MainBlock/index'
 
 const EventBlock = () => {
-  const handleScrollToAbout = () => {
-    const aboutSection = document.getElementById('about')
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' })
-    }
+  const handleGoToEvents = () => {
+    window.location.href = '/events/'
   }
 
   return (
@@ -28,7 +25,7 @@ const EventBlock = () => {
             </p>
             <button
               className={style.box_btn}
-              onClick={handleScrollToAbout}
+              onClick={handleGoToEvents}
             >
               Дізнатися більше
             </button>
