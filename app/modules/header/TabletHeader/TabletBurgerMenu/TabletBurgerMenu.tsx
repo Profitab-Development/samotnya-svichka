@@ -99,7 +99,7 @@ const TabletBurgerMenu: React.FC = () => {
   }
 
   const links: LinkItem[] = [
-    { to: '#about', label: 'Про нас' },
+    { to: '/about', label: 'Про нас' },
     { to: '#projects', label: 'Проекти' },
     { to: '#events', label: 'Події' },
     { to: '#contacts', label: 'Контакти' },
@@ -129,7 +129,14 @@ const TabletBurgerMenu: React.FC = () => {
                 className={style.wrap_right__nav_link}
                 onClick={(e) => {
                   e.preventDefault()
-                  scrollToSection(to.replace('#', ''))
+                  if (to.startsWith('/')) {
+                    // Перехід на іншу сторінку
+                    window.location.href = to
+                    handleClose()
+                  } else {
+                    // Скрол до секції на поточній сторінці
+                    scrollToSection(to.replace('#', ''))
+                  }
                 }}
               >
                 {label}

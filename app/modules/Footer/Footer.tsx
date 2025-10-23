@@ -129,7 +129,7 @@ const ContactSection: React.FC = () => {
   // const { t } = useStaticTranslations()
   return (
     <div className={style.wrap_contacts} suppressHydrationWarning>
-      <div className={style.wrap_contacts__txt} suppressHydrationWarning>Контакти</div>
+      <div className={style.wrap_contacts__txt} suppressHydrationWarning>Зв’язатись з нами:</div>
       <a href={`tel:${mobTel}`} className={style.wrap_contacts__link}>
         {mobTel}
       </a>

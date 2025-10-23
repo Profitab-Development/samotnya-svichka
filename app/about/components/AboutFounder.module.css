@@ -1,0 +1,258 @@
+.founder {
+  background: var(--creamy-white, #FAF3E0);
+  padding: 80px 0;
+}
+
+.founder_container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.founder_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary, #0B062D);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.founder_content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.founder_text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.founder_title_block {
+  margin-bottom: 20px;
+}
+
+.founder_title_badge {
+  background: var(--text-primary, #0B062D);
+  color: var(--creamy-white, #FAF3E0);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 20px;
+  border: 1px solid var(--text-primary, #0B062D);
+}
+
+.founder_name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary, #0B062D);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.founder_paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-primary, #0B062D);
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.founder_paragraph:last-of-type {
+  margin-bottom: 20px;
+}
+
+.founder_cta {
+  background: linear-gradient(135deg, var(--deep-bordeaux-red, #7B2C35) 0%, var(--warm-light-yellow, #FFD97D) 100%);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(123, 44, 53, 0.2);
+}
+
+.founder_cta_content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.founder_cta_text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.founder_cta_label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+.founder_cta_name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
+
+.founder_cta_button {
+  background: transparent;
+  border: 2px dashed white;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.founder_cta_button:hover {
+  background: white;
+  color: var(--deep-bordeaux-red, #A67C52);
+  border-style: solid;
+}
+
+.founder_image {
+  flex: 0 0 500px;
+  max-width: 500px;
+  margin-left: 40px;
+}
+
+.founder_image_frame {
+  position: relative;
+  border: 3px solid #A67C52;
+  border-radius: 12px;
+  overflow: hidden;
+  transform: none;
+  box-shadow: none;
+}
+
+.founder_img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  transform: none;
+}
+
+@media (max-width: 1180px) {
+  .founder_content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .founder_image {
+    flex: none;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  
+  .founder_img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 720px) {
+  .founder {
+    padding: 60px 0;
+  }
+  
+  .founder_title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .founder_content {
+    gap: 40px;
+  }
+  
+  .founder_paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .founder_cta {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .founder_cta_content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .founder_name {
+    font-size: 24px;
+  }
+  
+  .founder_img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .founder {
+    padding: 40px 0;
+  }
+  
+  .founder_title {
+    font-size: 24px;
+  }
+  
+  .founder_content {
+    gap: 30px;
+  }
+  
+  .founder_paragraph {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .founder_cta {
+    padding: 25px 20px;
+  }
+  
+  .founder_cta_icon {
+    font-size: 28px;
+  }
+  
+  .founder_cta_label {
+    font-size: 14px;
+  }
+  
+  .founder_cta_name {
+    font-size: 16px;
+  }
+  
+  .founder_cta_button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  
+  .founder_name {
+    font-size: 22px;
+  }
+  
+  .founder_img {
+    height: 350px;
+  }
+}
