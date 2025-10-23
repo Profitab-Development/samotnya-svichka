@@ -14,7 +14,7 @@
 .intro_content {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 120px;
 }
 
 .intro_text {
@@ -56,25 +56,29 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  transition: all 0.4s ease;
-  box-shadow: 0 10px 30px rgba(123, 44, 53, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(123, 44, 53, 0.2);
 }
 
 .donate_button:hover {
-  background: var(--warm-light-yellow, #FFD97D);
-  color: var(--text-primary, #0B062D);
-  transform: scale(1.05);
-  box-shadow: 0 12px 35px rgba(123, 44, 53, 0.35);
+  background: var(--deep-bordeaux-red-hover, #6B252C);
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(123, 44, 53, 0.3);
+}
+
+.donate_button:active {
+  background: var(--deep-bordeaux-red-active, #5B1E23);
+  color: var(--creamy-white, #FAF3E0);
+  border: none;
 }
 
 .donate_text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--creamy-white, #FAF3E0);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   transition: color 0.3s ease;
 }
 
@@ -108,7 +112,7 @@
   }
   
   .donate_text {
-    font-size: 20px;
+    font-size: 16px;
   }
   
 }
@@ -131,8 +135,7 @@
   }
   
   .donate_text {
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: 14px;
   }
   
 }
@@ -152,7 +155,7 @@
   }
   
   .donate_text {
-    font-size: 16px;
+    font-size: 12px;
   }
   
 }

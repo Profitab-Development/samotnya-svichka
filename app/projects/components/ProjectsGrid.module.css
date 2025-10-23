@@ -1,7 +1,7 @@
 .projects {
   background: var(--creamy-white, #FAF3E0);
   padding: 40px 0;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
 }
@@ -11,25 +11,16 @@
   max-width: 1400px;
 }
 
-.projects_title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--text-primary, #0B062D);
-  text-align: center;
-  margin-bottom: 40px;
-  line-height: 1.2;
-}
 
 .projects_grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .project_card {
   background: white;
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
@@ -46,7 +37,7 @@
 .project_image {
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 180px;
   overflow: hidden;
 }
 
@@ -63,29 +54,37 @@
 }
 
 .project_content {
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   flex: 1;
+  text-align: left;
 }
 
 .project_title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--deep-bordeaux-red, #7B2C35);
   margin: 0;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .project_description {
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4;
   color: var(--text-primary, #0B062D);
   margin: 0;
   flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .projects_grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -95,17 +94,12 @@
   }
   
   .projects_grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   
-  .projects_title {
-    font-size: 32px;
-    margin-bottom: 30px;
-  }
-  
   .project_image {
-    height: 180px;
+    height: 200px;
   }
   
   .project_content {
@@ -113,11 +107,11 @@
   }
   
   .project_title {
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .project_description {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -126,25 +120,25 @@
     padding: 20px 0;
   }
   
-  .projects_title {
-    font-size: 28px;
-    margin-bottom: 25px;
+  .projects_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   
   .project_image {
-    height: 150px;
+    height: 250px;
   }
   
   .project_content {
-    padding: 15px;
+    padding: 25px;
   }
   
   .project_title {
-    font-size: 16px;
+    font-size: 22px;
   }
   
   .project_description {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -153,24 +147,19 @@
     padding: 15px 0;
   }
   
-  .projects_title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
   .project_image {
-    height: 120px;
+    height: 200px;
   }
   
   .project_content {
-    padding: 12px;
+    padding: 20px;
   }
   
   .project_title {
-    font-size: 14px;
+    font-size: 20px;
   }
   
   .project_description {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
