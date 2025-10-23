@@ -153,15 +153,12 @@ const MobBurgerMenu: React.FC = () => {
       Проекти
     </a>
             <a
-              href="#events"
+              href="/events/"
               className={style.header_center__nav_link}
               onClick={(e) => {
                 e.preventDefault()
-                const element = document.getElementById('events')
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' })
-                  handleClose()
-                }
+                window.location.href = '/events/'
+                handleClose()
               }}
             >
               Події
