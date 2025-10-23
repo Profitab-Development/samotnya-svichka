@@ -104,7 +104,7 @@ const AddressSection: React.FC = () => {
         <a
           target={'_blank'}
           className={style.wrap_address__item}
-          href="https://maps.app.goo.gl/RGoCenuNxLYihjsY7"
+          href="https://maps.app.goo.gl/YxhJSqM9ddj3xkjs6"
         >
           Україна, 79019, Львівська обл., місто Львів, вул. Хмельницького Б., будинок 33, квартира 11
         </a>

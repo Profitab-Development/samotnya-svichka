@@ -61,7 +61,7 @@
 }
 
 .donate_button:hover {
-  background: var(--deep-bordeaux-red-hover, #6B252C);
+  background: #FFD97D;
   transform: scale(1.02);
   box-shadow: 0 6px 20px rgba(123, 44, 53, 0.3);
 }
@@ -80,6 +80,10 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.3s ease;
+}
+
+.donate_button:hover .donate_text {
+  color: var(--text-primary, #0B062D);
 }
 
 
