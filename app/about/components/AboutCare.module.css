@@ -32,6 +32,10 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
 }
 
 .care_card::before {
@@ -77,6 +81,7 @@
   
   .care_card {
     padding: 25px 15px;
+    min-height: 100px;
   }
   
   .care_icon {
@@ -102,6 +107,7 @@
   
   .care_card {
     padding: 20px 15px;
+    min-height: 90px;
   }
   
   .care_icon {
@@ -131,6 +137,7 @@
   
   .care_card {
     padding: 25px 20px;
+    min-height: 80px;
   }
   
   .care_icon {

@@ -19,7 +19,7 @@ const TabletHeader: React.FC = () => {
     { to: '/about/', label: 'Про нас' },
     { to: '/projects/', label: 'Проекти' },
     { to: '/events/', label: 'Події' },
-    { to: '#contacts', label: 'Контакти' },
+    { to: '/contacts/', label: 'Контакти' },
   ]
 
   const handler = TabletBurgerMenuStore((state) => state.handler)

@@ -164,15 +164,12 @@ const MobBurgerMenu: React.FC = () => {
               Події
             </a>
             <a
-              href="#contacts"
+              href="/contacts/"
               className={style.header_center__nav_link}
               onClick={(e) => {
                 e.preventDefault()
-                const element = document.getElementById('contacts')
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' })
-                  handleClose()
-                }
+                window.location.href = '/contacts/'
+                handleClose()
               }}
             >
               Контакти
