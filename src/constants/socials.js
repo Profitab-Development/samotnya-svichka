@@ -1,8 +1,8 @@
-// const instagramLink = 'https://instagram.com/znaesh.agency'
-const facebookLink = 'https://www.facebook.com/profile.php?id=61574212890293'
+const instagramLink = 'https://www.instagram.com/samotnia__svichka?igsh=MTBubWI3c2pnOWdpYQ=='
+const facebookLink = 'https://www.facebook.com/share/16KvvZ9A8G/?mibextid=wwXIfr'
 const telegramLink = 'https://t.me/aoso_org_ua'
 // const tiktokLink = 'https://www.tiktok.com/@znaesh.agency'
-const mobTel = '+380934407378'
-const mail = 'clients@aoso.org.ua'
+const mobTel = '+380 95 698 90 72'
+const mail = 'lonely-candle@online.ua'
 
-export { facebookLink, telegramLink, mobTel, mail }
+export { instagramLink, facebookLink, telegramLink, mobTel, mail }

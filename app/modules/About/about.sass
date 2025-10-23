@@ -1,0 +1,142 @@
+.about_block
+  padding-top: 60px
+  padding-bottom: 60px
+  background: #FAFAFA
+  position: relative
+
+.about_block_image
+  position: absolute
+  right: 5%
+  width: 495px
+  height: auto
+  bottom: 0%
+
+.about_text_content
+  display: flex
+  flex-direction: row
+  gap: 70px
+  justify-content: flex-start
+
+
+.about_left
+  max-width: 467px
+
+.about_left_title
+  color: #000
+  font-family: Montserrat, sans-serif
+  font-size: 45px
+  font-style: normal
+  font-weight: 700
+  line-height: normal
+  letter-spacing: 0.9px
+  text-transform: uppercase
+  margin-bottom: 10px
+
+.about_left_title_span
+  color: $mainBlue
+
+.about_left_text
+  color: #0B062D
+  font-family: Montserrat, sans-serif
+  font-size: 16px
+  font-style: normal
+  font-weight: 500
+  line-height: 138%
+  letter-spacing: -0.16px
+  margin-bottom: 55px
+
+.about_left_text_span
+  font-weight: 600
+
+.about_right_block
+  display: flex
+  flex-direction: column
+  max-width: 442px
+  gap: 12px
+
+.about_done_block
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 8px
+
+.about_done_text
+  color: #0B062D
+  font-family: Montserrat, sans-serif
+  font-size: 16px
+  font-style: normal
+  font-weight: 400
+  line-height: 138%
+  margin: 0
+
+@media (max-width: 1500px)
+  .about_block_image
+    position: absolute
+    right: 5%
+    width: 395px
+    height: auto
+
+  .about_text_content
+    display: flex
+    flex-direction: row
+    gap: 40px
+    justify-content: flex-start
+
+  .about_left
+   max-width: 410px   
+
+  .about_left_title
+    color: #000
+    font-family: Montserrat, sans-serif
+    font-size: 40px
+
+  .about_right_block
+    display: flex
+    flex-direction: column
+    max-width: 392px
+    gap: 12px
+
+@media (max-width: 1200px)
+
+  .about_block_image
+    display: none
+
+  .about_text_content
+    display: flex
+    flex-direction: column
+    gap: 40px
+    justify-content: flex-start
+
+  .about_left
+    max-width: 100%
+
+  .about_left_text
+    margin-bottom: 35px
+
+  .about_right_block
+    display: flex
+    flex-direction: column
+    max-width: 100%
+    gap: 12px  
+
+
+@media (max-width: 720px)
+
+  .about_block
+    padding-top: 52px
+    padding-bottom: 52px
+
+  .about_left_title
+    color: #000
+    font-family: Montserrat, sans-serif
+    font-size: 30px
+
+  .about_left_text
+    font-size: 16px
+    margin-bottom: 25px
+    
+  .about_done_text
+    color: #0B062D
+    font-family: Montserrat, sans-serif
+    font-size: 14px
+
