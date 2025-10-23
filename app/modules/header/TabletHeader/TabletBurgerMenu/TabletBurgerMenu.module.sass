@@ -1,0 +1,79 @@
+@import "../../../../../UI/colors"
+
+
+.backdrop
+  @include backdrop
+
+.wrap
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  background: #F6F8FF
+  height: 64px
+  visibility: hidden
+  z-index: 12
+  &_active
+    animation: active .5s forwards
+  &_right
+    display: flex
+    align-items: center
+    gap: 40px
+    height: 100%
+    &__dropdowns
+      display: flex
+      align-items: center
+      gap: 45px
+    &__btns
+      display: flex
+      align-items: center
+      gap: 12px
+      &_btnTg
+        text-align: center
+        width: 170px
+        height: 36px
+        flex-shrink: 0
+        border-radius: 3px
+        background: #1D93D2
+        color: #FFF
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        font-weight: 500
+        border: none
+        user-select: none
+        &:active
+          background: inherit
+          color: #000
+          border: 1px solid #1D93D2
+      &_btn
+        width: 170px
+        height: 36px
+        flex-shrink: 0
+        border-radius: 3px
+        border: none
+        background: $mainBlue
+        color: #FFF
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        font-weight: 500
+        user-select: none
+        &:active
+          background: inherit
+          color: #000
+          border: 1px solid $mainBlue
+
+
+@keyframes active
+  from
+    opacity: 0
+    visibility: hidden
+    transform: translateY(70%)
+  to
+    opacity: 1
+    visibility: visible
+    transform: translateY(100%)
+
+
+@media (max-width: 721px), (min-width: 1180px)
+  .wrap
+    display: none

@@ -1,3 +1,95 @@
+/* Samotnya Svichka Color Palette */
+
+:root {
+  /* Warm Light Yellow - #FFD97D */
+  --warm-light-yellow: #FFD97D;
+  --warm-light-yellow-hover: #F5D06A;
+  --warm-light-yellow-active: #EBC557;
+  
+  /* Deep Bordeaux Red - #7B2C35 */
+  --deep-bordeaux-red: #7B2C35;
+  --deep-bordeaux-red-hover: #6B252C;
+  --deep-bordeaux-red-active: #5B1E23;
+  
+  /* Creamy White - #FAF3E0 */
+  --creamy-white: #FAF3E0;
+  --creamy-white-hover: #F5EBD1;
+  --creamy-white-active: #F0E3C2;
+  
+  /* Soft Gray-Blue - #BFCAD3 */
+  --soft-gray-blue: #BFCAD3;
+  --soft-gray-blue-hover: #A8B5C0;
+  --soft-gray-blue-active: #91A0AD;
+  
+  /* Wood Brown - #A67C52 */
+  --wood-brown: #A67C52;
+  --wood-brown-hover: #956B47;
+  --wood-brown-active: #845A3C;
+  
+  /* Additional semantic colors */
+  --text-primary: #0B062D;
+  --text-secondary: #7B2C35;
+  --text-light: #FAF3E0;
+  --background-primary: #FAF3E0;
+  --background-secondary: #BFCAD3;
+  --background-dark: #0B062D;
+  --accent-primary: #FFD97D;
+  --accent-secondary: #7B2C35;
+  --border-color: #A67C52;
+  --shadow-color: rgba(123, 44, 53, 0.1);
+}
+
+/* Color utility classes */
+.text-warm-yellow { color: var(--warm-light-yellow); }
+.text-bordeaux-red { color: var(--deep-bordeaux-red); }
+.text-creamy-white { color: var(--creamy-white); }
+.text-gray-blue { color: var(--soft-gray-blue); }
+.text-wood-brown { color: var(--wood-brown); }
+
+.bg-warm-yellow { background-color: var(--warm-light-yellow); }
+.bg-bordeaux-red { background-color: var(--deep-bordeaux-red); }
+.bg-creamy-white { background-color: var(--creamy-white); }
+.bg-gray-blue { background-color: var(--soft-gray-blue); }
+.bg-wood-brown { background-color: var(--wood-brown); }
+
+.border-warm-yellow { border-color: var(--warm-light-yellow); }
+.border-bordeaux-red { border-color: var(--deep-bordeaux-red); }
+.border-creamy-white { border-color: var(--creamy-white); }
+.border-gray-blue { border-color: var(--soft-gray-blue); }
+.border-wood-brown { border-color: var(--wood-brown); }
+
+/* Hover states */
+.hover-warm-yellow:hover { 
+  background-color: var(--warm-light-yellow-hover); 
+  color: var(--text-primary);
+}
+.hover-bordeaux-red:hover { 
+  background-color: var(--deep-bordeaux-red-hover); 
+  color: var(--text-light);
+}
+.hover-creamy-white:hover { 
+  background-color: var(--creamy-white-hover); 
+  color: var(--text-primary);
+}
+.hover-gray-blue:hover { 
+  background-color: var(--soft-gray-blue-hover); 
+  color: var(--text-primary);
+}
+.hover-wood-brown:hover { 
+  background-color: var(--wood-brown-hover); 
+  color: var(--text-light);
+}
+
+/* Animation keyframes for color transitions */
+@keyframes colorTransition {
+  from {
+    background-color: var(--deep-bordeaux-red);
+  }
+  to {
+    background-color: var(--warm-light-yellow);
+  }
+}
+
 @keyframes activeBackdrop {
   from {
     opacity: 0;
@@ -8,5 +100,3 @@
     visibility: visible;
   }
 }
-
-/*# sourceMappingURL=colors.css.map */

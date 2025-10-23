@@ -24,16 +24,13 @@ import MobInstS from './MobInstS.webp'
 import MobInstH from './MobInstH.webp'
 import MobTikS from './MobTikS.webp'
 import MobTikH from './MobTikH.webp'
-import znaesh_logo from './znaesh_logo.webp'
-import logo_svichka from './logo-svichka.webp'
+import logo_svichka from './logo-svichka.png'
 import flag_ukraine from './flag_ukraine.svg'
 import flag_usa from './flag_usa.svg'
 import flag_poland from './flag_poland.svg'
 import backCall from './backCall.webp'
-import HeaderLogo from './header_logo.webp'
 
 export {
-  znaesh_logo,
   logo_svichka,
   facebook_gray,
   instagram_gray,
@@ -65,5 +62,4 @@ export {
   MobTikH,
   MobTikS,
   backCall,
-  HeaderLogo,
 }

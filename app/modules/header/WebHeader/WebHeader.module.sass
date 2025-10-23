@@ -1,0 +1,166 @@
+@import "../../../../UI/colors"
+.header_links__item
+  position: relative
+  display: flex
+  align-items: center
+  gap: 2px
+
+
+.dropdown
+  position: absolute
+  top: 100%
+  left: 0
+  background: white
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
+  border-radius: 8px
+  overflow: hidden
+  min-width: 150px
+  display: flex
+  flex-direction: column
+  z-index: 99
+.arrow_active
+  transform: rotate(180deg)
+  transition: transform 0.3s ease-in-out
+.dropdown_item
+  padding: 10px 15px
+  color: black
+  text-decoration: none
+  transition: background 0.3s
+.dropdown_item:hover
+  background: #f1f1f1
+  color: $titleSpanBlue
+
+
+
+.wrap
+  height: 64px
+  background: #FFF
+  display: flex
+  align-items: center
+  position: relative
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 76px
+  user-select: none
+  &_logo
+    width: 108px
+    height: auto
+  &_links
+    display: flex
+    align-items: center
+    gap: 20px
+    &__link
+      color: $textColor
+      font-family: 'Montserrat', sans-serif
+      font-size: 16px
+      font-weight: 500
+      text-decoration: none
+      cursor: pointer
+      position: relative
+      height: 37px
+      align-items: center
+      display: flex
+      &:hover
+        color: $titleSpanBlue
+      &_active
+        &::before
+          content: ''
+          width: 100%
+          height: 2px
+          border-radius: 6px
+          background: $darkBlue
+          position: absolute
+          bottom: -3px
+          left: 50%
+          transform: translateX(-50%)
+  &_right
+    display: flex
+    align-items: center
+    gap: 40px
+    &__dropdowns
+      display: flex
+      align-items: center
+      gap: 45px
+    &__btns
+      display: flex
+      align-items: center
+      gap: 12px
+      & > a
+        text-decoration: none
+      &_btnTg
+        text-align: center
+        width: 200px
+        height: 37px
+        flex-shrink: 0
+        border-radius: 3px
+        background: #1D93D2
+        color: #FFF
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        font-weight: 500
+        border: none
+        display: flex
+        align-items: center
+        justify-content: center
+        box-sizing: border-box
+        gap: 5px
+        &:hover
+          background: #02a5fb
+        &:active
+          background: inherit
+          color: #000
+          border: 1px solid #1D93D2
+      &_btn
+        width: 200px
+        height: 37px
+        flex-shrink: 0
+        border-radius: 3px
+        border: none
+        background: $mainBlue
+        color: #FFF
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        font-weight: 500
+        display: flex
+        align-items: center
+        justify-content: center
+        box-sizing: border-box
+        cursor: pointer
+        &:hover
+          background: #B2251A
+        &:active
+          background: inherit
+          color: #000
+          border: 1px solid $mainBlue
+        & > img
+          display: none
+
+
+@media (max-width: 1516px)
+  .header
+    gap: 30px
+  .header_right
+    gap: 20px
+  .header_right__btns_btn
+    width: 40px
+    height: 37px
+    padding: 8px
+    & > span
+      display: none
+    & > img
+      display: block
+  .header_right__btns_btnTg
+    width: 40px
+    height: 37px
+    padding: 8px
+    & > span
+      display: none
+
+
+@media (max-width: 1181px)
+  .wrap
+    display: none
+  .header
+    display: none
