@@ -45,13 +45,11 @@ export const metadata = {
   },
 }
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: ReactNode
 }) {
-  const messages = (await import('../messages/ua.json')).default
-
   return (
     <html lang={'uk'} suppressHydrationWarning={true}>
       <head>
@@ -79,7 +77,7 @@ export default async function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
 
-        <ClientLayout messages={messages}>
+        <ClientLayout>
           {children}
         </ClientLayout>
       </body>

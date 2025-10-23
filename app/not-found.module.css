@@ -1,0 +1,196 @@
+.notFoundMain {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: var(--creamy-white, #FAF3E0);
+  padding: 80px 0;
+}
+
+.notFoundContainer {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.notFoundContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.notFoundText {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.notFoundTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120px;
+  font-weight: 900;
+  color: var(--deep-bordeaux-red, #7B2C35);
+  line-height: 1;
+  margin: 0;
+  text-shadow: 0 4px 8px rgba(123, 44, 53, 0.2);
+}
+
+.notFoundSubtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary, #0B062D);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.notFoundDescription {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-primary, #0B062D);
+  margin: 0;
+}
+
+.notFoundActions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.notFoundButton {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.notFoundButtonPrimary {
+  background: var(--deep-bordeaux-red, #7B2C35);
+  color: white;
+}
+
+.notFoundButtonPrimary:hover {
+  background: var(--warm-light-yellow, #FFD97D);
+  color: var(--text-primary, #0B062D);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(123, 44, 53, 0.3);
+}
+
+.notFoundButtonSecondary {
+  background: transparent;
+  color: var(--deep-bordeaux-red, #7B2C35);
+  border-color: var(--deep-bordeaux-red, #7B2C35);
+}
+
+.notFoundButtonSecondary:hover {
+  background: var(--deep-bordeaux-red, #7B2C35);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(123, 44, 53, 0.3);
+}
+
+.notFoundImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFoundIcon {
+  font-size: 200px;
+  opacity: 0.3;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .notFoundContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .notFoundTitle {
+    font-size: 100px;
+  }
+  
+  .notFoundSubtitle {
+    font-size: 32px;
+  }
+  
+  .notFoundActions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .notFoundMain {
+    padding: 60px 0;
+  }
+  
+  .notFoundTitle {
+    font-size: 80px;
+  }
+  
+  .notFoundSubtitle {
+    font-size: 28px;
+  }
+  
+  .notFoundDescription {
+    font-size: 16px;
+  }
+  
+  .notFoundButton {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+  
+  .notFoundIcon {
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notFoundMain {
+    padding: 40px 0;
+  }
+  
+  .notFoundTitle {
+    font-size: 60px;
+  }
+  
+  .notFoundSubtitle {
+    font-size: 24px;
+  }
+  
+  .notFoundDescription {
+    font-size: 14px;
+  }
+  
+  .notFoundActions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .notFoundButton {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .notFoundIcon {
+    font-size: 120px;
+  }
+}
