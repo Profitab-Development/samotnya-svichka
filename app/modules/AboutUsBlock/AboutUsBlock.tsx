@@ -5,11 +5,8 @@ import style from './AboutUsBlock.module.css'
 // import { BtnArrow } from '@/assets/Images/MainBlock/index'
 
 const AboutUsBlock = () => {
-  const handleScrollToAbout = () => {
-    const aboutSection = document.getElementById('about')
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' })
-    }
+  const handleGoToAbout = () => {
+    window.location.href = '/about'
   }
 
   return (
@@ -28,7 +25,7 @@ const AboutUsBlock = () => {
             </p>
             <button
               className={style.box_btn}
-              onClick={handleScrollToAbout}
+              onClick={handleGoToAbout}
             >
               Детальніше про нас
             </button>

@@ -1,0 +1,158 @@
+.intro {
+  background: var(--creamy-white, #FAF3E0);
+  padding: 100px 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.intro_container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.intro_content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.intro_text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.intro_paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-primary, #0B062D);
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.intro_paragraph:last-child {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.intro_action {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate_button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--deep-bordeaux-red, #7B2C35);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(123, 44, 53, 0.3);
+}
+
+.donate_button:hover {
+  background: var(--warm-light-yellow, #FFD97D);
+  color: var(--text-primary, #0B062D);
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(123, 44, 53, 0.35);
+}
+
+.donate_text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1180px) {
+  .intro_content {
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+  
+  .intro_text {
+    max-width: 100%;
+  }
+  
+  .donate_button {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .donate_text {
+    font-size: 20px;
+  }
+  
+}
+
+@media (max-width: 720px) {
+  .intro {
+    padding: 80px 0;
+    min-height: 70vh;
+  }
+  
+  .intro_paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .donate_button {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .donate_text {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .intro {
+    padding: 60px 0;
+  }
+  
+  .intro_content {
+    gap: 40px;
+  }
+  
+  .donate_button {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .donate_text {
+    font-size: 16px;
+  }
+  
+}

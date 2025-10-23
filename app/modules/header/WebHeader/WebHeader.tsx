@@ -272,7 +272,7 @@ const WebHeader: React.FC = () => {
   // }, [])
 
   const links: LinkItem[] = [
-    { to: '#about', label: 'Про нас' },
+    { to: '/about', label: 'Про нас' },
     { to: '#projects', label: 'Проекти' },
     { to: '#events', label: 'Події' },
     { to: '#contacts', label: 'Контакти' },
@@ -301,7 +301,13 @@ const WebHeader: React.FC = () => {
               className={style.header_links__link}
               onClick={(e) => {
                 e.preventDefault()
-                scrollToSection(to.replace('#', ''))
+                if (to.startsWith('/')) {
+                  // Перехід на іншу сторінку
+                  window.location.href = to
+                } else {
+                  // Скрол до секції на поточній сторінці
+                  scrollToSection(to.replace('#', ''))
+                }
               }}
             >
               {label}

@@ -131,15 +131,12 @@ const MobBurgerMenu: React.FC = () => {
         <div className={style.header_center}>
           <nav className={style.header_center__nav}>
             <a
-              href="#about"
+              href="/about"
               className={style.header_center__nav_link}
               onClick={(e) => {
                 e.preventDefault()
-                const element = document.getElementById('about')
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' })
-                  handleClose()
-                }
+                window.location.href = '/about'
+                handleClose()
               }}
             >
               Про нас

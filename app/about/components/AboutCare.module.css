@@ -1,0 +1,144 @@
+.care {
+  background: transparent;
+  padding: 80px 0;
+}
+
+.care_container {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.care_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary, #0B062D);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.care_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.care_card {
+  background: transparent;
+  border: 2px dashed var(--wood-brown, #A67C52);
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.care_card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--creamy-white, #FAF3E0);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.care_card:hover::before {
+  opacity: 0.1;
+}
+
+.care_card:hover {
+  transform: translateY(-5px);
+  border-color: var(--deep-bordeaux-red, #7B2C35);
+  box-shadow: 0 10px 25px rgba(123, 44, 53, 0.1);
+}
+
+
+.care_text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-primary, #0B062D);
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .care_grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  
+  .care_card {
+    padding: 25px 15px;
+  }
+  
+  .care_icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .care_text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .care_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .care_title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .care_card {
+    padding: 20px 15px;
+  }
+  
+  .care_icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+  
+  .care_text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .care {
+    padding: 60px 0;
+  }
+  
+  .care_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .care_title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .care_card {
+    padding: 25px 20px;
+  }
+  
+  .care_icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .care_text {
+    font-size: 15px;
+  }
+}
