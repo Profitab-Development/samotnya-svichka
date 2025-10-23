@@ -29,7 +29,7 @@ export default function NotFound() {
                 <Link href="/" className={`${styles.notFoundButton} ${styles.notFoundButtonPrimary}`}>
                   На головну
                 </Link>
-                <Link href="/about" className={`${styles.notFoundButton} ${styles.notFoundButtonSecondary}`}>
+                <Link href="/about/" className={`${styles.notFoundButton} ${styles.notFoundButtonSecondary}`}>
                   Про нас
                 </Link>
               </div>

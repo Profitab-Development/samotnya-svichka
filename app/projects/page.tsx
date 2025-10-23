@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from '../modules/header'
 import { Footer } from '../modules/Footer/Footer'
-import ProjectBlock1 from './components/ProjectBlock1'
+import ProjectsGrid from './components/ProjectsGrid'
 import ProjectBlock2 from './components/ProjectBlock2'
 import DevelopedBy from '../modules/Developedby/DevelopedBy'
 
@@ -17,7 +17,7 @@ export default function ProjectsPage() {
     <div suppressHydrationWarning={true}>
       <Header />
       <main>
-        <ProjectBlock1 />
+        <ProjectsGrid />
         <ProjectBlock2 />
       </main>
       <Footer />

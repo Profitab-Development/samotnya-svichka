@@ -130,28 +130,28 @@ const MobBurgerMenu: React.FC = () => {
 
         <div className={style.header_center}>
           <nav className={style.header_center__nav}>
-            <a
-              href="/about"
-              className={style.header_center__nav_link}
-              onClick={(e) => {
-                e.preventDefault()
-                window.location.href = '/about'
-                handleClose()
-              }}
-            >
-              Про нас
-            </a>
-            <a
-              href="/projects"
-              className={style.header_center__nav_link}
-              onClick={(e) => {
-                e.preventDefault()
-                window.location.href = '/projects'
-                handleClose()
-              }}
-            >
-              Проекти
-            </a>
+    <a
+      href="/about/"
+      className={style.header_center__nav_link}
+      onClick={(e) => {
+        e.preventDefault()
+        window.location.href = '/about/'
+        handleClose()
+      }}
+    >
+      Про нас
+    </a>
+    <a
+      href="/projects/"
+      className={style.header_center__nav_link}
+      onClick={(e) => {
+        e.preventDefault()
+        window.location.href = '/projects/'
+        handleClose()
+      }}
+    >
+      Проекти
+    </a>
             <a
               href="#events"
               className={style.header_center__nav_link}
