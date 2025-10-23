@@ -64,25 +64,34 @@
 }
 
 .donate_button {
-  display: inline-block;
+  width: 200px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  border: none;
   background: var(--deep-bordeaux-red, #7B2C35);
-  color: white;
-  padding: 15px 30px;
-  border-radius: 8px;
+  color: var(--creamy-white, #FAF3E0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
   transition: all 0.3s ease;
   align-self: flex-start;
 }
 
 .donate_button:hover {
-  background: var(--warm-light-yellow, #FFD97D);
-  color: var(--text-primary, #0B062D);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(123, 44, 53, 0.3);
+  background: var(--deep-bordeaux-red-hover, #6B252C);
+}
+
+.donate_button:active {
+  background: var(--deep-bordeaux-red-active, #5B1E23);
+  color: var(--creamy-white, #FAF3E0);
+  border: none;
 }
 
 .donate_note {
@@ -135,6 +144,9 @@
   
   .donate_button {
     align-self: center;
+    width: 180px;
+    height: 35px;
+    font-size: 13px;
   }
 }
 
@@ -156,8 +168,9 @@
   }
   
   .donate_button {
-    font-size: 16px;
-    padding: 12px 24px;
+    width: 160px;
+    height: 33px;
+    font-size: 12px;
   }
   
   .project_image {
@@ -183,8 +196,9 @@
   }
   
   .donate_button {
-    font-size: 14px;
-    padding: 10px 20px;
+    width: 140px;
+    height: 30px;
+    font-size: 11px;
   }
   
   .project_image {

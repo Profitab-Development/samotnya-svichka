@@ -13,24 +13,23 @@ const ProjectsGrid = () => {
     {
       title: 'Безперервна доброта',
       description: '— не просто слоган. Це наша філософія. Проєкт діє безперервно: щомісяця ми проводимо нові акції, залучаємо партнерів, створюємо можливості для тих, хто втратив надію.',
-      image: '/images/projects/DQ6B2027.jpg'
+      image: '/images/projects/DQ6B7369.jpg'
     },
     {
       title: 'Коли турбота — це дія',
       description: 'Проєкт створено, щоб підтримати тих, хто найбільше цього потребує. Ми об\'єднуємо зусилля б\'юті-експертів, волонтерів і всіх небайдужих, щоб дарувати не лише зовнішню трансформацію, а й внутрішнє світло.',
-      image: '/images/projects/DQ6B2238.jpg'
+      image: '/images/projects/DQ6B2027.jpg'
     },
     {
       title: 'Даруючи Доброту',
       description: '– Благодійний фонд "Самотня свічка" допомагає самотнім пенсіонерам відчути себе потрібними та захищеними. Ми забезпечуємо їх необхідними речами, організовуємо дозвілля та надаємо психологічну підтримку.',
-      image: '/images/projects/DQ6B7369.jpg'
+      image: '/images/projects/DQ6B2238.jpg'
     }
   ]
 
   return (
     <section className={style.projects}>
       <div className={`customContainer ${style.projects_container}`}>
-        <h1 className={style.projects_title}>Наші проекти</h1>
         <div className={style.projects_grid}>
           {projects.map((project, index) => (
             <div key={index} className={style.project_card}>

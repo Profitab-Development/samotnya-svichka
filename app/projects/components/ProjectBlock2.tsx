@@ -26,12 +26,12 @@ const ProjectBlock2 = () => {
               >
                 Донат
               </a>
-              <p className={style.donate_note}>(посилання на монобанку)</p>
+             
             </div>
           </div>
           <div className={style.project_image}>
             <Image
-              src="/images/projects/support-project.jpg"
+              src="/images/projects/DQ6B8008.jpg"
               alt="Підтримка літніх людей - тепла зустріч"
               className={style.project_img}
               width={500}
