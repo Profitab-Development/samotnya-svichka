@@ -1,17 +1,16 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  // output: 'export', // Тимчасово відключено для розробки
+  output: 'export',
   images: {
     unoptimized: true,
   },
-  // Налаштування для 404 сторінки
-  trailingSlash: false,
+  trailingSlash: true,
+  distDir: 'out',
   // Додаткові налаштування для статичного експорту
-  ...(process.env.NODE_ENV === 'production' && {
-    output: 'export',
-    distDir: 'out',
-  }),
+  generateBuildId: async () => {
+    return 'build-' + Date.now()
+  },
 };
 
 export default nextConfig

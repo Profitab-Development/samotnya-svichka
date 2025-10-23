@@ -99,8 +99,8 @@ const TabletBurgerMenu: React.FC = () => {
   }
 
   const links: LinkItem[] = [
-    { to: '/about', label: 'Про нас' },
-    { to: '/projects', label: 'Проекти' },
+    { to: '/about/', label: 'Про нас' },
+    { to: '/projects/', label: 'Проекти' },
     { to: '#events', label: 'Події' },
     { to: '#contacts', label: 'Контакти' },
   ]
