@@ -6,11 +6,13 @@ import AboutStory from './components/AboutStory'
 import AboutCare from './components/AboutCare'
 import AboutFounder from './components/AboutFounder'
 import DevelopedBy from '../modules/Developedby/DevelopedBy'
+import FullWidthVideoBlock from '@/app/about/components/FullWidthVideoBlock'
 
 export function generateMetadata() {
   return {
     title: 'Про нас - Самотня Свічка',
-    description: 'Дізнайтеся більше про благодійний фонд «Самотня Свічка» - нашу місію, цінності, команду та історію допомоги людям похилого віку.',
+    description:
+      'Дізнайтеся більше про благодійний фонд «Самотня Свічка» - нашу місію, цінності, команду та історію допомоги людям похилого віку.',
   }
 }
 
@@ -19,6 +21,7 @@ export default function AboutPage() {
     <div suppressHydrationWarning={true}>
       <Header />
       <main>
+        <FullWidthVideoBlock />
         <AboutIntro />
         <AboutStory />
         <AboutCare />

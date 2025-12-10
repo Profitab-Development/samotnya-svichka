@@ -1,0 +1,134 @@
+.wrap {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* DESKTOP: текст зліва, відео справа */
+
+.box_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+}
+
+/* LEFT TEXT — 45% */
+
+.box_text {
+    flex: 0.45;
+    max-width: 520px;
+}
+
+.text_line {
+    color: var(--text-primary, #0B062D);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.text_line:last-child {
+    margin-bottom: 0;
+}
+
+/* RIGHT VIDEO — 55% */
+
+.box_video {
+    flex: 0.55;
+    max-width: 680px;
+}
+
+.video_wrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video_iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border: none;
+}
+
+/* TABLET */
+
+@media (max-width: 1180px) {
+    .wrap {
+        padding: 60px 0;
+    }
+
+    .box_content {
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box_text {
+        max-width: 100%;
+    }
+
+    .text_line {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .box_video {
+        max-width: 100%;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 720px) {
+    .wrap {
+        padding: 40px 0;
+    }
+
+    .box_content {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .box_text {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 16px;
+        text-align: left;
+    }
+
+    .text_line {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* VIDEO: FULL WIDTH, NO PADDING */
+
+    .box_video {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .video_wrapper {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;          /* <-- прибрано */
+        border-radius: 12px; /* <-- тепер працює */
+        overflow: hidden;
+    }
+
+    .video_iframe {
+        width: 100%;
+        border-radius: 12px;
+    }
+}

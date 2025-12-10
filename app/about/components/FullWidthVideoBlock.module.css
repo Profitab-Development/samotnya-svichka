@@ -1,0 +1,45 @@
+/* Блок повністю на ширину екрана */
+.videoSection {
+    width: 100vw; /* займає весь екран */
+    margin-left: 50%;
+    transform: translateX(-50%); /* центруємо поза контейнером */
+    padding: 0;
+    /*margin-top: 40px;*/
+    /*margin-bottom: 40px;*/
+}
+
+/* Обгортка відео */
+.video_wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* важливо для iframe */
+    border-radius: 0; /* без скруглень */
+}
+
+/* Сам iframe */
+.video_iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+
+/* Tablet */
+@media (max-width: 1180px) {
+    .videoSection {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    .videoSection {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}

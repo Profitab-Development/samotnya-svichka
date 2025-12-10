@@ -1,3 +1,244 @@
+/*.logos {*/
+/*  padding-top: 30px;*/
+/*  padding-bottom: 50px;*/
+/*}*/
+
+/*.titleContainer {*/
+/*  text-align: center;*/
+/*  margin-bottom: 40px;*/
+/*}*/
+
+/*.title {*/
+/*  color: var(--text-primary, #0B062D);*/
+/*  font-family: Montserrat, sans-serif;*/
+/*  font-size: 45px;*/
+/*  font-style: normal;*/
+/*  font-weight: 700;*/
+/*  line-height: normal;*/
+/*  letter-spacing: 0.9px;*/
+/*  text-transform: uppercase;*/
+/*  margin: 0;*/
+/*}*/
+
+/*.titleSpan {*/
+/*  color: var(--deep-bordeaux-red, #7B2C35);*/
+/*}*/
+
+/*.content {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  gap: 40px;*/
+/*}*/
+
+/*.buttonContainer {*/
+/*  flex-shrink: 0;*/
+/*}*/
+
+/*.partnerButton {*/
+/*  color: var(--creamy-white, #FAF3E0);*/
+/*  font-family: Montserrat, sans-serif;*/
+/*  font-size: 14px;*/
+/*  font-style: normal;*/
+/*  font-weight: 500;*/
+/*  line-height: normal;*/
+/*  padding: 15px 32px;*/
+/*  background: var(--deep-bordeaux-red, #7B2C35);*/
+/*  border: none;*/
+/*  border-radius: 3px;*/
+/*  cursor: pointer;*/
+/*  transition: background 0.3s ease;*/
+/*  width: 280px;*/
+
+/*  text-align: center;*/
+/*  text-decoration: none;*/
+/*  display: inline-block;*/
+/*}*/
+
+/*.partnerButton:hover {*/
+/*  background: #FFD97D;*/
+/*  color: var(--text-primary, #0B062D);*/
+/*}*/
+
+/*.partnerButton:active {*/
+/*  background: var(--deep-bordeaux-red-active, #5B1E23);*/
+/*}*/
+
+/*.logosContainer {*/
+/*  flex: 1;*/
+/*  width: 100%;*/
+/*}*/
+
+/*.logosStatic {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: space-between;*/
+/*  gap: 20px;*/
+/*  flex-wrap: nowrap;*/
+/*  padding: 10px 0;*/
+/*  width: 100%;*/
+/*}*/
+
+/*.img {*/
+/*  width: 180px;*/
+/*  height: 90px;*/
+/*  object-fit: contain;*/
+/*  flex-shrink: 0;*/
+/*  max-width: 180px;*/
+/*  max-height: 90px;*/
+/*  min-width: 180px;*/
+/*  min-height: 90px;*/
+/*  display: block;*/
+/*}*/
+
+
+/*@media (max-width: 1500px) {*/
+/*  .logos {*/
+/*    padding-bottom: 45px;*/
+/*  }*/
+/*  */
+/*  .title {*/
+/*    font-size: 40px;*/
+/*  }*/
+/*  */
+/*  .content {*/
+/*    gap: 50px;*/
+/*  }*/
+/*  */
+/*  .logosContainer {*/
+/*    width: 100%;*/
+/*  }*/
+/*  */
+/*  .logosStatic {*/
+/*    gap: 15px;*/
+/*    justify-content: space-between;*/
+/*  }*/
+/*  */
+/*  .img {*/
+/*    width: 160px;*/
+/*    height: 80px;*/
+/*    object-fit: contain;*/
+/*    max-width: 160px;*/
+/*    max-height: 80px;*/
+/*    min-width: 160px;*/
+/*    min-height: 80px;*/
+/*  }*/
+
+/*}*/
+
+/*@media (max-width: 1200px) {*/
+/*  .content {*/
+/*    gap: 40px;*/
+/*  }*/
+/*  */
+/*  .logosContainer {*/
+/*    width: 100%;*/
+/*  }*/
+/*  */
+/*  .logosStatic {*/
+/*    gap: 10px;*/
+/*    justify-content: space-between;*/
+/*  }*/
+/*  */
+/*  .img {*/
+/*    width: 140px;*/
+/*    height: 70px;*/
+/*    object-fit: contain;*/
+/*    max-width: 140px;*/
+/*    max-height: 70px;*/
+/*    min-width: 140px;*/
+/*    min-height: 70px;*/
+/*  }*/
+
+/*}*/
+
+/*@media (max-width: 900px) {*/
+/*  .content {*/
+/*    flex-direction: column;*/
+/*    gap: 30px;*/
+/*  }*/
+/*  */
+/*  .logosContainer {*/
+/*    width: 100%;*/
+/*  }*/
+/*  */
+/*  .logosStatic {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr);*/
+/*    gap: 15px;*/
+/*    justify-items: center;*/
+/*    align-items: center;*/
+/*    padding: 15px 0;*/
+/*  }*/
+/*  */
+/*  .img {*/
+/*    width: 120px;*/
+/*    height: 60px;*/
+/*    object-fit: contain;*/
+/*    max-width: 120px;*/
+/*    max-height: 60px;*/
+/*    min-width: 120px;*/
+/*    min-height: 60px;*/
+/*  }*/
+
+/*  */
+/*  .partnerButton {*/
+/*    width: 100%;*/
+/*    max-width: 350px;*/
+/*  }*/
+/*}*/
+
+/*@media (max-width: 720px) {*/
+/*  .logos {*/
+/*    padding-top: 26px;*/
+/*    padding-bottom: 40px;*/
+/*  }*/
+/*  */
+/*  .title {*/
+/*    font-size: 30px;*/
+/*  }*/
+/*  */
+/*  .titleContainer {*/
+/*    margin-bottom: 30px;*/
+/*  }*/
+/*  */
+/*  .logosStatic {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    gap: 20px;*/
+/*    justify-items: center;*/
+/*    align-items: center;*/
+/*    padding: 20px 0;*/
+/*  }*/
+/*  */
+/*  .img {*/
+/*    width: 120px;*/
+/*    height: 60px;*/
+/*    object-fit: contain;*/
+/*    max-width: 120px;*/
+/*    max-height: 60px;*/
+/*    min-width: 120px;*/
+/*    min-height: 60px;*/
+/*  }*/
+
+/*  */
+/*  .partnerButton {*/
+/*    width: 100%;*/
+/*    max-width: 280px;*/
+/*    height: auto;*/
+/*    padding: 15px 32px;*/
+/*    font-size: 14px;*/
+/*  }*/
+/*  */
+/*  .logosContainer {*/
+/*    width: 100%;*/
+/*  }*/
+/*}*/
+
+/*!*# sourceMappingURL=Logo.module.css.map *!*/
+
+
 .logos {
   padding-top: 30px;
   padding-bottom: 50px;
@@ -65,92 +306,102 @@
   background: var(--deep-bordeaux-red-active, #5B1E23);
 }
 
+/* ===== ЛОГОТИПИ / БІГУЧА СТРІЧКА ===== */
+
 .logosContainer {
   flex: 1;
   width: 100%;
+  overflow: hidden;     /* ховаємо краї стрічки */
+  position: relative;
 }
 
 .logosStatic {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
   flex-wrap: nowrap;
   padding: 10px 0;
-  width: 100%;
+  width: max-content;   /* ширина по контенту — потрібно для marquee */
+  animation: logosScroll 25s linear infinite;
+}
+
+/* зупинка при наведенні */
+.logosStatic:hover {
+  animation-play-state: paused;
 }
 
 .img {
   width: 180px;
   height: 90px;
   object-fit: contain;
-  flex-shrink: 0;
+
   max-width: 180px;
   max-height: 90px;
   min-width: 180px;
   min-height: 90px;
+
+  margin: 0 60px;       /* відступи між логотипами */
+  flex-shrink: 0;
   display: block;
 }
 
+/* ключові кадри руху */
+@keyframes logosScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== ADAPTIVE ===== */
 
 @media (max-width: 1500px) {
   .logos {
     padding-bottom: 45px;
   }
-  
+
   .title {
     font-size: 40px;
   }
-  
+
   .content {
     gap: 50px;
   }
-  
+
   .logosContainer {
     width: 100%;
   }
-  
-  .logosStatic {
-    gap: 15px;
-    justify-content: space-between;
-  }
-  
+
   .img {
     width: 160px;
     height: 80px;
-    object-fit: contain;
     max-width: 160px;
     max-height: 80px;
     min-width: 160px;
     min-height: 80px;
+    margin: 0 50px;
   }
-
 }
 
 @media (max-width: 1200px) {
   .content {
     gap: 40px;
   }
-  
+
   .logosContainer {
     width: 100%;
   }
-  
-  .logosStatic {
-    gap: 10px;
-    justify-content: space-between;
-  }
-  
+
   .img {
     width: 140px;
     height: 70px;
-    object-fit: contain;
     max-width: 140px;
     max-height: 70px;
     min-width: 140px;
     min-height: 70px;
+    margin: 0 40px;
   }
-
 }
 
 @media (max-width: 900px) {
@@ -158,31 +409,26 @@
     flex-direction: column;
     gap: 30px;
   }
-  
+
   .logosContainer {
     width: 100%;
   }
-  
+
+  /* !! НЕ міняємо display і animation — стрічка лишається */
   .logosStatic {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    justify-items: center;
-    align-items: center;
     padding: 15px 0;
   }
-  
+
   .img {
     width: 120px;
     height: 60px;
-    object-fit: contain;
     max-width: 120px;
     max-height: 60px;
     min-width: 120px;
     min-height: 60px;
+    margin: 0 30px;
   }
 
-  
   .partnerButton {
     width: 100%;
     max-width: 350px;
@@ -194,35 +440,30 @@
     padding-top: 26px;
     padding-bottom: 40px;
   }
-  
+
   .title {
     font-size: 30px;
   }
-  
+
   .titleContainer {
     margin-bottom: 30px;
   }
-  
+
+  /* все ще flex + анімація, просто менші відступи */
   .logosStatic {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
     padding: 20px 0;
   }
-  
+
   .img {
     width: 120px;
     height: 60px;
-    object-fit: contain;
     max-width: 120px;
     max-height: 60px;
     min-width: 120px;
     min-height: 60px;
+    margin: 0 24px;
   }
 
-  
   .partnerButton {
     width: 100%;
     max-width: 280px;
@@ -230,7 +471,7 @@
     padding: 15px 32px;
     font-size: 14px;
   }
-  
+
   .logosContainer {
     width: 100%;
   }
