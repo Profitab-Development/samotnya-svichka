@@ -1,4 +1,4 @@
-@import "../../../../UI/colors"
+//@import "../../UI/colors"
 .header_links__item
   position: relative
   display: flex
@@ -28,7 +28,7 @@
   transition: background 0.3s
 .dropdown_item:hover
   background: #f1f1f1
-  color: $titleSpanBlue
+  color: #7B2C35
 
 
 
@@ -45,14 +45,14 @@
   gap: 76px
   user-select: none
   &_logo
-    width: 108px
+    width: 55px
     height: auto
   &_links
     display: flex
     align-items: center
     gap: 20px
     &__link
-      color: $textColor
+      color: #0B062D
       font-family: 'Montserrat', sans-serif
       font-size: 16px
       font-weight: 500
@@ -63,14 +63,14 @@
       align-items: center
       display: flex
       &:hover
-        color: $titleSpanBlue
+        color: #7B2C35
       &_active
         &::before
           content: ''
           width: 100%
           height: 2px
           border-radius: 6px
-          background: $darkBlue
+          background: #0B062D
           position: absolute
           bottom: -3px
           left: 50%
@@ -118,7 +118,7 @@
         flex-shrink: 0
         border-radius: 3px
         border: none
-        background: $mainBlue
+        background: #7B2C35
         color: #FFF
         font-family: 'Montserrat', sans-serif
         font-size: 14px
@@ -133,7 +133,7 @@
         &:active
           background: inherit
           color: #000
-          border: 1px solid $mainBlue
+          border: 1px solid #7B2C35
         & > img
           display: none
 
@@ -144,7 +144,7 @@
   .header_right
     gap: 20px
   .header_right__btns_btn
-    width: 40px
+    width: 60px
     height: 37px
     padding: 8px
     & > span

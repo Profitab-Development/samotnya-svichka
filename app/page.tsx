@@ -1,6 +1,6 @@
 import { Header } from './modules/header'
 import { MainBlock } from './modules/MainBlock'
-import { EventBlock } from './modules/EventBlock/EventBlock'
+// import { EventBlock } from './modules/EventBlock/EventBlock'
 import { AboutBlock } from './modules/AboutBlock/AboutBlock'
 import { AboutUsBlock } from './modules/AboutUsBlock/AboutUsBlock'
 // import About from './modules/About/About'
@@ -8,6 +8,7 @@ import Geography from './modules/Geography/Geography'
 import Logo from './modules/Logo/Logo'
 import { Footer } from './modules/Footer/Footer'
 import DevelopedBy from './modules/Developedby/DevelopedBy'
+import { CandleVideoBlock } from '@/app/modules/CandleVideoBlock/CandleVideoBlock'
 
 export function generateMetadata() {
   return {
@@ -22,14 +23,14 @@ export default function Home() {
     <div suppressHydrationWarning={true}>
       <Header />
       <MainBlock />
-      <EventBlock />
+      <CandleVideoBlock />
+      {/*<EventBlock />*/}
       <AboutBlock />
-      
-     
+
       <Geography />
-      <Logo /> 
+      <Logo />
       <AboutUsBlock />
-      
+
       <Footer />
       <DevelopedBy />
     </div>
