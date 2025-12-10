@@ -1,6 +1,6 @@
 import { Header } from './modules/header'
 import { MainBlock } from './modules/MainBlock'
-import { EventBlock } from './modules/EventBlock/EventBlock'
+// import { EventBlock } from './modules/EventBlock/EventBlock'
 import { AboutBlock } from './modules/AboutBlock/AboutBlock'
 import { AboutUsBlock } from './modules/AboutUsBlock/AboutUsBlock'
 // import About from './modules/About/About'
