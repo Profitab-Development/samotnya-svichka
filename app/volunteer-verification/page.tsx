@@ -1,7 +1,7 @@
 // app/volunteer-verification/page.tsx
 import React from 'react'
 import { Header } from '@/app/modules/header'
-import { Footer } from '@/app/modules/Footer/Footer'
+// import { Footer } from '@/app/modules/Footer/Footer'
 import DevelopedBy from '@/app/modules/Developedby/DevelopedBy'
 
 import VolunteerHero from './components/VolunteerHero'
