@@ -7,7 +7,7 @@ import style from './VolunteerProfile.module.css'
 const VolunteerProfile = () => {
   return (
     <section className={style.section}>
-      <div className={`customContainer ${style.container}`}>
+      <div className="customContainer">
         <div className={style.columns}>
           <div className={style.text_block}>
             <h2 className={style.title}>

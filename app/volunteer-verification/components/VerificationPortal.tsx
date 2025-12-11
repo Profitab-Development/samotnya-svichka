@@ -6,7 +6,7 @@ import style from './VerificationPortal.module.css'
 const VerificationPortal = () => {
   return (
     <section className={style.section}>
-      <div className={`customContainer ${style.container}`}>
+      <div className="customContainer">
         <div className={style.columns}>
           <div className={style.left}>
             <h2 className={style.title}>Volunteer Verification Portal</h2>

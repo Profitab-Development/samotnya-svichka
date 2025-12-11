@@ -6,7 +6,7 @@ import style from './VerifiedVolunteers.module.css'
 const VerifiedVolunteers = () => {
   return (
     <section className={style.section}>
-      <div className={`customContainer ${style.container}`}>
+      <div className="customContainer">
         <h2 className={style.title}>Verified Volunteers</h2>
 
         <div className={style.table_wrapper}>
