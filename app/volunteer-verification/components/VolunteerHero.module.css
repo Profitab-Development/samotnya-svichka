@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    background: #fff7e6; /* єдиний бежевий */
+    background: #fff7e6;
     padding: 80px 0 60px;
 }
 
@@ -12,6 +12,20 @@
     max-width: 780px;
     margin: 0 auto;
     text-align: center;
+}
+
+/* LOGO */
+.hero_logo {
+    width: 130px;
+    height: auto;
+    margin: 0 auto 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero_logo svg {
+    width: 100%;
+    height: auto;
 }
 
 .hero_brand {
@@ -51,6 +65,11 @@
     .hero_subtitle {
         font-size: 16px;
     }
+
+    .hero_logo {
+        width: 110px;
+        margin-bottom: 18px;
+    }
 }
 
 /* Mobile */
@@ -60,7 +79,12 @@
     }
 
     .hero_container {
-        padding: 0 16px; /* щоб не прилипало до краю */
+        padding: 0 16px;
+    }
+
+    .hero_logo {
+        width: 95px;
+        margin-bottom: 16px;
     }
 
     .hero_brand {
