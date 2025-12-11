@@ -1,0 +1,112 @@
+.section {
+    width: 100%;
+    background: #fff7e6;
+    padding: 50px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px;
+}
+
+.columns {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.text_block {
+    flex: 1.2;
+}
+
+.photo_block {
+    flex: 0.9;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b062d;
+    margin-bottom: 18px;
+}
+
+.text,
+.text_last {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #3a354f;
+    margin-bottom: 14px;
+}
+
+.text_last {
+    font-style: italic;
+}
+
+/* десктопний розмір фото */
+.photo_wrapper {
+    position: relative;
+    width: 260px;
+    height: 360px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #d9d1c0;
+}
+
+.photo {
+    object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 1180px) {
+    .columns {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .photo_block {
+        justify-content: flex-start;
+    }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .text,
+    .text_last {
+        font-size: 15px;
+    }
+
+    .columns {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .photo_block {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* фото під текстом на всю ширину контейнера */
+    .photo_wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: 560px;
+        aspect-ratio: 4 / 3; /* можна змінити якщо буде інший кадр */
+        border-radius: 12px;
+    }
+}

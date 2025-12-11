@@ -20,6 +20,7 @@ const TabletHeader: React.FC = () => {
     { to: '/projects/', label: 'Проекти' },
     { to: '/events/', label: 'Події' },
     { to: '/contacts/', label: 'Контакти' },
+    { to: '/volunteer-verification', label: 'Volunteer Verification' },
   ]
 
   const handler = TabletBurgerMenuStore((state) => state.handler)
@@ -61,14 +62,17 @@ const TabletHeader: React.FC = () => {
 
         <div className={style.header_right}>
           <div className={style.header_right__phone}>
-            <a href="tel:+380956989072" className={style.header_right__phone_link}>
+            <a
+              href="tel:+380956989072"
+              className={style.header_right__phone_link}
+            >
               +380 95 698 90 72
             </a>
           </div>
           <div className={style.header_right__btns}>
-            <a 
-              href="https://send.monobank.ua/jar/qbu3WGhLU" 
-              target="_blank" 
+            <a
+              href="https://send.monobank.ua/jar/qbu3WGhLU"
+              target="_blank"
               rel="noopener noreferrer"
               className={style.header_right__btns_btn}
             >

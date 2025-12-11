@@ -1,0 +1,50 @@
+.section {
+    width: 100%;
+    background: #fff7e6; /* той самий бежевий */
+    padding: 50px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px; /* як у інших блоків */
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0b062d;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #3a354f;
+    margin-bottom: 16px;
+}
+
+.paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    .section {
+        padding: 35px 0;
+    }
+
+    .container {
+        padding: 0 16px; /* контейнер у мобі */
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .paragraph {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}

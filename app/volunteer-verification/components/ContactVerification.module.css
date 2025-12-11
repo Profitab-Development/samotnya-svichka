@@ -1,0 +1,118 @@
+.section {
+    width: 100%;
+    background: #fff7e6;
+    padding: 60px 0 70px;
+}
+
+.container {
+    width: 100%;
+    max-width: 780px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b062d;
+    margin-bottom: 16px;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #3a354f;
+    margin-bottom: 18px;
+}
+
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 26px;
+    border-radius: 10px;
+    border: 1px solid #e5dcc8;
+    background: #fffaf1;
+    margin-bottom: 18px;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #0b062d;
+}
+
+.role {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #5b5340;
+    margin-top: 4px;
+}
+
+.email {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #7b2c35;
+    margin-top: 6px;
+}
+
+.text_bottom {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #3a354f;
+    margin-bottom: 26px;
+}
+
+.footer_line {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7b2c35;
+}
+
+.footer_copy {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #5b5340;
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    .section {
+        padding: 45px 0 55px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 16px 18px;
+    }
+
+    .footer_copy {
+        font-size: 12px;
+    }
+}
