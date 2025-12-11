@@ -1,0 +1,77 @@
+.hero {
+    width: 100%;
+    background: #fff7e6; /* єдиний бежевий */
+    padding: 80px 0 60px;
+}
+
+.hero_container {
+    width: 100%;
+}
+
+.hero_inner {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero_brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #7b2c35;
+    margin-bottom: 12px;
+}
+
+.hero_title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0b062d;
+    margin-bottom: 18px;
+}
+
+.hero_subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #3a354f;
+}
+
+/* Tablet */
+@media (max-width: 1180px) {
+    .hero {
+        padding: 60px 0 50px;
+    }
+
+    .hero_title {
+        font-size: 30px;
+    }
+
+    .hero_subtitle {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    .hero {
+        padding: 40px 0 35px;
+    }
+
+    .hero_container {
+        padding: 0 16px; /* щоб не прилипало до краю */
+    }
+
+    .hero_brand {
+        font-size: 14px;
+    }
+
+    .hero_title {
+        font-size: 24px;
+    }
+
+    .hero_subtitle {
+        font-size: 15px;
+    }
+}

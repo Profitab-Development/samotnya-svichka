@@ -107,7 +107,9 @@ const MobBurgerMenu: React.FC = () => {
   // }
 
   return (
-    <div className={`${style.wrap} ${show ? style.wrap_active : ''} ${isClosing ? style.wrap_closing : ''}`}>
+    <div
+      className={`${style.wrap} ${show ? style.wrap_active : ''} ${isClosing ? style.wrap_closing : ''}`}
+    >
       <div className={`customContainer ${style.header}`}>
         <div className={style.header_top}>
           <Link href="/">
@@ -131,28 +133,28 @@ const MobBurgerMenu: React.FC = () => {
 
         <div className={style.header_center}>
           <nav className={style.header_center__nav}>
-    <a
-      href="/about/"
-      className={style.header_center__nav_link}
-      onClick={(e) => {
-        e.preventDefault()
-        window.location.href = '/about/'
-        handleClose()
-      }}
-    >
-      Про нас
-    </a>
-    <a
-      href="/projects/"
-      className={style.header_center__nav_link}
-      onClick={(e) => {
-        e.preventDefault()
-        window.location.href = '/projects/'
-        handleClose()
-      }}
-    >
-      Проекти
-    </a>
+            <a
+              href="/about/"
+              className={style.header_center__nav_link}
+              onClick={(e) => {
+                e.preventDefault()
+                window.location.href = '/about/'
+                handleClose()
+              }}
+            >
+              Про нас
+            </a>
+            <a
+              href="/projects/"
+              className={style.header_center__nav_link}
+              onClick={(e) => {
+                e.preventDefault()
+                window.location.href = '/projects/'
+                handleClose()
+              }}
+            >
+              Проекти
+            </a>
             <a
               href="/events/"
               className={style.header_center__nav_link}
@@ -175,15 +177,29 @@ const MobBurgerMenu: React.FC = () => {
             >
               Контакти
             </a>
+            <a
+              href="/volunteer-verification"
+              className={style.header_center__nav_link}
+              onClick={(e) => {
+                e.preventDefault()
+                window.location.href = '/volunteer-verification'
+                handleClose()
+              }}
+            >
+              Volunteer Verification
+            </a>
           </nav>
-          
+
           <div className={style.header_center__phone}>
-            <a href="tel:+380956989072" className={style.header_center__phone_link}>
+            <a
+              href="tel:+380956989072"
+              className={style.header_center__phone_link}
+            >
               +380 95 698 90 72
             </a>
             <p className={style.header_center__phone_note}>Цілодобово</p>
           </div>
-          
+
           {/* <form
             className={style.header_center__form}
             onSubmit={handleSubmit(onSubmit)}
