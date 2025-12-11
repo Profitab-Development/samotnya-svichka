@@ -6,7 +6,7 @@ import style from './AboutInitiative.module.css'
 const AboutInitiative = () => {
   return (
     <section className={style.section}>
-      <div className={`customContainer ${style.container}`}>
+      <div className="customContainer">
         <h2 className={style.title}>About the Lonely Candle Initiative</h2>
         <p className={style.paragraph}>
           Lonely Candle Initiative is a humanitarian program founded by Dr.

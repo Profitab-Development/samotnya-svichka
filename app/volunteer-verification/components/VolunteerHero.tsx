@@ -8,7 +8,7 @@ import { logo_svichka } from '@/assets/Icons'
 const VolunteerHero = () => {
   return (
     <section className={style.hero}>
-      <div className={`customContainer ${style.hero_container}`}>
+      <div className="customContainer">
         <div className={style.hero_inner}>
           {/* LOGO */}
           <div className={style.hero_logo}>
