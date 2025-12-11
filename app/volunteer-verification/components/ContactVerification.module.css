@@ -74,6 +74,20 @@
     justify-content: center;
 }
 
+/* рядок з лого + текстом */
+.footer_logo_row {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* саме зображення лого */
+.footer_logo_img {
+    width: 40px;
+    height: auto;
+}
+
+/* текст "Lonely Candle Initiative" */
 .footer_logo {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -110,6 +124,10 @@
     .card {
         width: 100%;
         padding: 16px 18px;
+    }
+
+    .footer_logo_img {
+        width: 32px;
     }
 
     .footer_copy {
