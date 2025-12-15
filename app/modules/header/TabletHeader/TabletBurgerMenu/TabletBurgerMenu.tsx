@@ -12,10 +12,7 @@ import { TabletBurgerMenuStore } from './TabletBurgerMenuStore'
 import style from './TabletBurgerMenu.module.css'
 import 'react-international-phone/style.css'
 
-import {
-  sendInTg,
-  THANK_ROUTE,
-} from '@/constants'
+import { sendInTg, THANK_ROUTE } from '@/constants'
 // import { tg_white, MobTelIcon } from '@/assets/Icons'
 import { Toastify } from '@/app/components/Toastify/Toastify'
 import { DotIcon } from '@/app/components/DotIcon/DotIcon'
@@ -100,7 +97,7 @@ const TabletBurgerMenu: React.FC = () => {
 
   const links: LinkItem[] = [
     { to: '/about/', label: 'Про нас' },
-    { to: '/projects/', label: 'Проекти' },
+    { to: '/projects/', label: 'Проєкти' },
     { to: '/events/', label: 'Події' },
     { to: '/contacts/', label: 'Контакти' },
   ]
@@ -152,7 +149,7 @@ const TabletBurgerMenu: React.FC = () => {
                 type="text"
                 className={style.wrap_right__form_inputs__nameInput}
                 id="name"
-                placeholder="Ваше ім&apos;я"
+                placeholder="Ваше ім'я"
                 {...register('name', {
                   required: false,
                   minLength: 2,

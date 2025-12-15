@@ -153,7 +153,7 @@ const MobBurgerMenu: React.FC = () => {
                 handleClose()
               }}
             >
-              Проекти
+              Проєкти
             </a>
             <a
               href="/events/"
