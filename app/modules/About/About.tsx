@@ -10,7 +10,7 @@ import { AboutDone, AboutImage } from '@/assets/Images/About/index'
 const aboutItems = [
   'Безкоштовна допомога – ми надаємо підтримку без фінансових внесків',
   'Практична допомога – лише дієва підтримка та турбота',
-  'Об\'єднання добра – формуємо спільноту волонтерів та партнерів',
+  "Об'єднання добра – формуємо спільноту волонтерів та партнерів",
   'Актуальність – підтримка в найскладніші часи',
 ]
 
@@ -27,19 +27,30 @@ const About: React.FC = () => {
             </p>
             <p className="about_left_text">
               <span className="about_left_text_span">
-                Благодійна організація &quot;Самотня свічка&quot;
+                Благодійна організація &quot;Самотня Свічка&quot;
               </span>{' '}
-              – це фонд, що об&apos;єднує людей, які хочуть допомогти похилим людям.{' '}
-              <span className="about_left_text_span">Наша місія</span> –
-              дарувати тепло і турботу людям похилого віку в геріатричних центрах
-              України, надаючи їм підтримку та увагу.
+              – це фонд, що об&apos;єднує людей, які хочуть допомогти похилим
+              людям. <span className="about_left_text_span">Наша місія</span> –
+              дарувати тепло і турботу людям похилого віку в геріатричних
+              центрах України, надаючи їм підтримку та увагу.
             </p>
-            <button className={style.box_main__btn} onClick={() => document.getElementById('geography')?.scrollIntoView({ behavior: 'smooth' })}>
+            <button
+              className={style.box_main__btn}
+              onClick={() =>
+                document
+                  .getElementById('geography')
+                  ?.scrollIntoView({ behavior: 'smooth' })
+              }
+            >
               Дізнатися більше
             </button>
           </div>
           <div className="about_center_block">
-            <Image className="about_block_image" src={AboutImage} alt="AboutImage" />
+            <Image
+              className="about_block_image"
+              src={AboutImage}
+              alt="AboutImage"
+            />
           </div>
           <div className="about_right_block">
             <p className="about_left_text_span">
